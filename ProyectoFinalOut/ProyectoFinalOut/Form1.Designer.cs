@@ -47,9 +47,10 @@
             btnSiguiente.ForeColor = SystemColors.ActiveCaptionText;
             btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
             btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(119, 330);
+            btnSiguiente.Location = new Point(104, 248);
+            btnSiguiente.Margin = new Padding(3, 2, 3, 2);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(106, 97);
+            btnSiguiente.Size = new Size(94, 96);
             btnSiguiente.TabIndex = 10;
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
@@ -58,18 +59,19 @@
             // 
             // txtNombre
             // 
-            txtNombre.Location = new Point(151, 229);
+            txtNombre.Location = new Point(132, 172);
+            txtNombre.Margin = new Padding(3, 2, 3, 2);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(176, 27);
+            txtNombre.Size = new Size(154, 23);
             txtNombre.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(151, 189);
+            label2.Location = new Point(132, 142);
             label2.Name = "label2";
-            label2.Size = new Size(176, 21);
+            label2.Size = new Size(144, 17);
             label2.TabIndex = 7;
             label2.Text = "Ingresa tu nombre:";
             // 
@@ -77,9 +79,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(162, 55);
+            label1.Location = new Point(142, 41);
             label1.Name = "label1";
-            label1.Size = new Size(139, 24);
+            label1.Size = new Size(115, 19);
             label1.TabIndex = 6;
             label1.Text = "TuTransporti";
             // 
@@ -90,9 +92,10 @@
             btnSalir.ForeColor = SystemColors.ActiveCaptionText;
             btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSalir.Location = new Point(252, 330);
+            btnSalir.Location = new Point(220, 248);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(105, 97);
+            btnSalir.Size = new Size(100, 96);
             btnSalir.TabIndex = 12;
             btnSalir.Text = "Salir";
             btnSalir.TextAlign = ContentAlignment.BottomCenter;
@@ -102,27 +105,29 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(545, 21);
+            pictureBox1.Location = new Point(477, 16);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(346, 567);
+            pictureBox1.Size = new Size(303, 425);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(199, 82);
+            pictureBox2.Location = new Point(174, 62);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(68, 62);
+            pictureBox2.Size = new Size(64, 57);
             pictureBox2.TabIndex = 14;
             pictureBox2.TabStop = false;
             // 
             // frmTransporti
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(922, 613);
+            ClientSize = new Size(807, 460);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnSalir);
@@ -130,6 +135,7 @@
             Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmTransporti";
             Text = "TransPorti";
             Load += frmTransporti_Load;
