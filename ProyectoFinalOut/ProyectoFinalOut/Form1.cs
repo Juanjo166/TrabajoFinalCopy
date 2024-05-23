@@ -29,7 +29,7 @@ namespace ProyectoFinalOut
 
         private void frmTransporti_Load(object sender, EventArgs e)
         {
-            
+            //HOLA CON TODOS
         }
     }
 }
