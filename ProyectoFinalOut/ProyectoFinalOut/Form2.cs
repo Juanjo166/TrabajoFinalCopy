@@ -40,7 +40,21 @@ namespace ProyectoFinalOut
 
         private void frmTutransporti_Load(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            Transportes2 tp22 = new Transportes2();
+            this.Hide();
+            tp22.ShowDialog(); //Muestro formulario
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Ventana2 vt2 = new Ventana2();
+            this.Hide();
+            vt2.ShowDialog(); //Muestro formulario
         }
     }
 }

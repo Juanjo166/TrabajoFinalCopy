@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalOut
 {
-    public partial class frmRuta1 : Form
+    public partial class Transportes2 : Form
     {
-        public frmRuta1()
+        public Transportes2()
         {
+            InitializeComponent();
             InitializeComponent();
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
@@ -21,28 +22,28 @@ namespace ProyectoFinalOut
             FormBorderStyle = FormBorderStyle.FixedSingle; // Establecer el borde del formulario a un tamaño fijo
         }
 
+        private void Transportes2_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnCasa_Click(object sender, EventArgs e)
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            frmTutransporti tp3 = new frmTutransporti();
+            this.Hide();
+            tp3.ShowDialog(); //Muestro formulario
+        }
+
+        private void button4_Click(object sender, EventArgs e)
         {
             Ventana2 vt2 = new Ventana2();
             this.Hide();
             vt2.ShowDialog(); //Muestro formulario
-        }
-
-        private void frmRuta1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            frmTutransporti tp4 = new frmTutransporti();
-            this.Hide();
-            tp4.ShowDialog(); //Muestro formulario
         }
     }
 }

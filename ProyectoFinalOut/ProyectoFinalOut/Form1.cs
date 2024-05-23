@@ -16,9 +16,9 @@ namespace ProyectoFinalOut
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            frmTutransporti tp = new frmTutransporti();
+            Ventana2 Vt2 = new Ventana2();
             this.Hide();
-            tp.ShowDialog(); //Muestro formulario
+            Vt2.ShowDialog(); //Muestro formulario
 
         }
 
@@ -33,6 +33,11 @@ namespace ProyectoFinalOut
             //gasajhjhdddf
             //AAAAAAAASASSDSAFSAG
             //ultimo comentario
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

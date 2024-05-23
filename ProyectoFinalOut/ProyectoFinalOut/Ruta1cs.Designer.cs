@@ -40,6 +40,7 @@
             label3 = new Label();
             label4 = new Label();
             pictureBox5 = new PictureBox();
+            btnSiguiente = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -53,7 +54,7 @@
             btnSalir.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSalir.Location = new Point(323, 470);
+            btnSalir.Location = new Point(371, 470);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(99, 96);
             btnSalir.TabIndex = 13;
@@ -68,7 +69,7 @@
             btnCasa.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(116, 470);
+            btnCasa.Location = new Point(100, 470);
             btnCasa.Name = "btnCasa";
             btnCasa.Size = new Size(95, 96);
             btnCasa.TabIndex = 11;
@@ -162,11 +163,27 @@
             pictureBox5.TabIndex = 22;
             pictureBox5.TabStop = false;
             // 
+            // btnSiguiente
+            // 
+            btnSiguiente.BackColor = SystemColors.GradientActiveCaption;
+            btnSiguiente.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
+            btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
+            btnSiguiente.Location = new Point(232, 470);
+            btnSiguiente.Name = "btnSiguiente";
+            btnSiguiente.Size = new Size(108, 96);
+            btnSiguiente.TabIndex = 23;
+            btnSiguiente.Text = "Atras";
+            btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
+            btnSiguiente.UseVisualStyleBackColor = false;
+            btnSiguiente.Click += btnSiguiente_Click;
+            // 
             // frmRuta1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(btnSiguiente);
             Controls.Add(pictureBox5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -203,5 +220,6 @@
         private Label label3;
         private Label label4;
         private PictureBox pictureBox5;
+        private Button btnSiguiente;
     }
 }

@@ -39,6 +39,7 @@
             button3 = new Button();
             pictureBox2 = new PictureBox();
             label3 = new Label();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
@@ -75,13 +76,14 @@
             btnSiguiente.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
             btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(111, 443);
+            btnSiguiente.Location = new Point(209, 442);
             btnSiguiente.Name = "btnSiguiente";
             btnSiguiente.Size = new Size(108, 96);
             btnSiguiente.TabIndex = 4;
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
             btnSiguiente.UseVisualStyleBackColor = false;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
             // btnSalir
             // 
@@ -89,7 +91,7 @@
             btnSalir.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSalir.Location = new Point(302, 443);
+            btnSalir.Location = new Point(352, 443);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(108, 96);
             btnSalir.TabIndex = 10;
@@ -168,11 +170,28 @@
             label3.TabIndex = 15;
             label3.Text = "TuTransporti";
             // 
+            // button4
+            // 
+            button4.BackColor = SystemColors.GradientActiveCaption;
+            button4.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button4.ForeColor = SystemColors.ActiveCaptionText;
+            button4.Image = (Image)resources.GetObject("button4.Image");
+            button4.ImageAlign = ContentAlignment.TopCenter;
+            button4.Location = new Point(69, 442);
+            button4.Name = "button4";
+            button4.Size = new Size(107, 97);
+            button4.TabIndex = 17;
+            button4.Text = "Casa";
+            button4.TextAlign = ContentAlignment.BottomCenter;
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
+            // 
             // frmTutransporti
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(button4);
             Controls.Add(pictureBox2);
             Controls.Add(label3);
             Controls.Add(button3);
@@ -203,5 +222,6 @@
         private Button button3;
         private PictureBox pictureBox2;
         private Label label3;
+        private Button button4;
     }
 }
