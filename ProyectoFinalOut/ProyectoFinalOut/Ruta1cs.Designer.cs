@@ -41,11 +41,16 @@
             label4 = new Label();
             pictureBox5 = new PictureBox();
             btnSiguiente = new Button();
+            button1 = new Button();
+            textBox1 = new TextBox();
+            label5 = new Label();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // btnSalir
@@ -99,9 +104,9 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(100, 317);
+            pictureBox3.Location = new Point(64, 317);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 116);
+            pictureBox3.Size = new Size(233, 116);
             pictureBox3.TabIndex = 16;
             pictureBox3.TabStop = false;
             // 
@@ -178,11 +183,50 @@
             btnSiguiente.UseVisualStyleBackColor = false;
             btnSiguiente.Click += btnSiguiente_Click;
             // 
+            // button1
+            // 
+            button1.Location = new Point(714, 526);
+            button1.Name = "button1";
+            button1.Size = new Size(85, 26);
+            button1.TabIndex = 43;
+            button1.Text = "Enviar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(634, 437);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(251, 83);
+            textBox1.TabIndex = 41;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(636, 398);
+            label5.Name = "label5";
+            label5.Size = new Size(222, 23);
+            label5.TabIndex = 42;
+            label5.Text = "Recomendaciones y quejas";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Location = new Point(617, 386);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(286, 178);
+            pictureBox6.TabIndex = 44;
+            pictureBox6.TabStop = false;
+            // 
             // frmRuta1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(label5);
+            Controls.Add(pictureBox6);
             Controls.Add(btnSiguiente);
             Controls.Add(pictureBox5);
             Controls.Add(label4);
@@ -203,6 +247,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -221,5 +266,9 @@
         private Label label4;
         private PictureBox pictureBox5;
         private Button btnSiguiente;
+        private Button button1;
+        private TextBox textBox1;
+        private Label label5;
+        private PictureBox pictureBox6;
     }
 }

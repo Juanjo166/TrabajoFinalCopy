@@ -12,6 +12,8 @@ namespace ProyectoFinalOut
             MaximizeBox = false; // Deshabilitar el botón de maximizar
             FormBorderStyle = FormBorderStyle.FixedSingle;
 
+
+
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)

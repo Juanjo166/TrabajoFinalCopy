@@ -10,10 +10,11 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalOut
 {
-    public partial class Ventana2 : Form
+    public partial class frmVentana3Respuesta : Form
     {
-        public Ventana2()
+        public frmVentana3Respuesta()
         {
+            InitializeComponent();
             InitializeComponent();
             InitializeComponent();
             Size = new Size(940, 660);
@@ -23,12 +24,7 @@ namespace ProyectoFinalOut
             FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Ventana2_Load(object sender, EventArgs e)
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
@@ -38,18 +34,18 @@ namespace ProyectoFinalOut
             Application.Exit();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Ventana2 VT2 = new Ventana2();
+            this.Hide();
+            VT2.ShowDialog(); //Muestro formulario
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             frmTutransporti tp = new frmTutransporti();
             this.Hide();
             tp.ShowDialog(); //Muestro formulario
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            frmVentana3Respuesta vtr3 = new frmVentana3Respuesta();
-            this.Hide();
-            vtr3.ShowDialog(); //Muestro formulario
         }
     }
 }

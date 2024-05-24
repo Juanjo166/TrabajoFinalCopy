@@ -41,11 +41,17 @@
             pictureBox1 = new PictureBox();
             btnSalir = new Button();
             btnCasa = new Button();
+            textBox1 = new TextBox();
+            label5 = new Label();
+            button1 = new Button();
+            label6 = new Label();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // btnAtras
@@ -179,11 +185,59 @@
             btnCasa.UseVisualStyleBackColor = false;
             btnCasa.Click += btnCasa_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(633, 443);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(251, 83);
+            textBox1.TabIndex = 36;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(635, 404);
+            label5.Name = "label5";
+            label5.Size = new Size(222, 23);
+            label5.TabIndex = 37;
+            label5.Text = "Recomendaciones y quejas";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(713, 532);
+            button1.Name = "button1";
+            button1.Size = new Size(85, 26);
+            button1.TabIndex = 38;
+            button1.Text = "Enviar";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(615, 117);
+            label6.Name = "label6";
+            label6.Size = new Size(0, 20);
+            label6.TabIndex = 39;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Location = new Point(616, 392);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(286, 178);
+            pictureBox6.TabIndex = 40;
+            pictureBox6.TabStop = false;
+            // 
             // frmRuta6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(button1);
+            Controls.Add(textBox1);
+            Controls.Add(label5);
+            Controls.Add(pictureBox6);
+            Controls.Add(label6);
             Controls.Add(btnAtras);
             Controls.Add(pictureBox5);
             Controls.Add(label4);
@@ -203,6 +257,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -221,5 +276,10 @@
         private PictureBox pictureBox1;
         private Button btnSalir;
         private Button btnCasa;
+        private TextBox textBox1;
+        private Label label5;
+        private Button button1;
+        private Label label6;
+        private PictureBox pictureBox6;
     }
 }

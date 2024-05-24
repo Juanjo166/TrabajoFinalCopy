@@ -94,6 +94,7 @@
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
             btnSiguiente.UseVisualStyleBackColor = false;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
             // txtNombre
             // 
