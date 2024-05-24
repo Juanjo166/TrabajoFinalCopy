@@ -45,5 +45,19 @@ namespace ProyectoFinalOut
             this.Hide();
             vt2.ShowDialog(); //Muestro formulario
         }
+
+        private void btnRuta8_Click(object sender, EventArgs e)
+        {
+            frmRuta8 rt8 = new frmRuta8();
+            this.Hide();
+            rt8.ShowDialog(); //Muestro formulario
+        }
+
+        private void btbRuta14_Click(object sender, EventArgs e)
+        {
+            frmRurta14 rt14 = new frmRurta14();
+            this.Hide();
+            rt14.ShowDialog(); //Muestro formulario
+        }
     }
 }

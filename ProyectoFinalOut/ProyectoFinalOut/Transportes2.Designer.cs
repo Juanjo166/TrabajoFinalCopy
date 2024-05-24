@@ -120,6 +120,7 @@
             btbRuta14.Text = "Ruta 14";
             btbRuta14.TextAlign = ContentAlignment.BottomCenter;
             btbRuta14.UseVisualStyleBackColor = false;
+            btbRuta14.Click += btbRuta14_Click;
             // 
             // pictureBox1
             // 
@@ -158,6 +159,7 @@
             btnRuta8.Text = "Ruta 8";
             btnRuta8.TextAlign = ContentAlignment.BottomCenter;
             btnRuta8.UseVisualStyleBackColor = false;
+            btnRuta8.Click += btnRuta8_Click;
             // 
             // btnSiguiente
             // 
