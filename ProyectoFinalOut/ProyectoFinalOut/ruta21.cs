@@ -10,18 +10,14 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalOut
 {
-    public partial class frmRuta7 : Form
+    public partial class frmRuta21 : Form
     {
-        public frmRuta7()
+        public frmRuta21()
         {
             InitializeComponent();
-            Size = new Size(940, 660);
-            StartPosition = FormStartPosition.CenterScreen;
-            MaximizeBox = false; // Deshabilitar el botón de maximizar
-            FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
-        private void frmRuta7_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -38,25 +34,12 @@ namespace ProyectoFinalOut
             frmTutransporti tp4 = new frmTutransporti();
             this.Hide();
             tp4.ShowDialog();
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblRuta7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
     }

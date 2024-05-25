@@ -197,6 +197,7 @@
             pictureBox2.Size = new Size(448, 168);
             pictureBox2.TabIndex = 61;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -207,6 +208,7 @@
             pictureBox1.Size = new Size(304, 460);
             pictureBox1.TabIndex = 60;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // btnSalir
             // 
@@ -249,6 +251,7 @@
             lblRuta7.Size = new Size(60, 17);
             lblRuta7.TabIndex = 73;
             lblRuta7.Text = "RUTA 7";
+            lblRuta7.Click += lblRuta7_Click;
             // 
             // lblHorario
             // 
