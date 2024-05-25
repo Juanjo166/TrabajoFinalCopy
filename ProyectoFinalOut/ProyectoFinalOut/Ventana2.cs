@@ -15,7 +15,6 @@ namespace ProyectoFinalOut
         public Ventana2()
         {
             InitializeComponent();
-            InitializeComponent();
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
 
@@ -50,6 +49,13 @@ namespace ProyectoFinalOut
             frmVentana3Respuesta vtr3 = new frmVentana3Respuesta();
             this.Hide();
             vtr3.ShowDialog(); //Muestro formulario
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmNoticias Vt2 = new frmNoticias();
+            this.Hide();
+            Vt2.ShowDialog(); //Muestro formulario
         }
     }
 }

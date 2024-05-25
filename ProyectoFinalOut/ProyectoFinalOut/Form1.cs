@@ -41,6 +41,14 @@ namespace ProyectoFinalOut
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmNoticias Vt2 = new frmNoticias();
+            this.Hide();
+            Vt2.ShowDialog(); //Muestro formulario
+            
+        }
     }
 }
 //gaaaaaaaaaaaaaaaaa

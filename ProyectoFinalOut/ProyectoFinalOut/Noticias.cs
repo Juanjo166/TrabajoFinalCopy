@@ -10,11 +10,10 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalOut
 {
-    public partial class frmRuta6 : Form
+    public partial class frmNoticias : Form
     {
-        public frmRuta6()
+        public frmNoticias()
         {
-            InitializeComponent();
             InitializeComponent();
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
@@ -22,23 +21,14 @@ namespace ProyectoFinalOut
             FormBorderStyle = FormBorderStyle.FixedSingle; // Establecer el borde del formulario a un tamaño fijo
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnCasa_Click(object sender, EventArgs e)
+        private void frmNoticias_Load(object sender, EventArgs e)
         {
-            Ventana2 vt2 = new Ventana2();
-            this.Hide();
-            vt2.ShowDialog(); //Muestro formulario
-        }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            frmTutransporti tp4 = new frmTutransporti();
-            this.Hide();
-            tp4.ShowDialog(); //Muestro formulario
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -46,11 +36,11 @@ namespace ProyectoFinalOut
             Application.Exit();
         }
 
-        private void btnRecomendaciones_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            Ventana2 vt2 = new Ventana2();
             this.Hide();
-            fr.ShowDialog(); //Muestro formulario
+            vt2.ShowDialog(); //Muestro formulario
         }
     }
 }

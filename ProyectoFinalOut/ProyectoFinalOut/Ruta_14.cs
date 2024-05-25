@@ -15,6 +15,11 @@ namespace ProyectoFinalOut
         public frmRurta14()
         {
             InitializeComponent();
+            Size = new Size(940, 660);
+            StartPosition = FormStartPosition.CenterScreen;
+
+            MaximizeBox = false; // Deshabilitar el botón de maximizar
+            FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -34,6 +39,18 @@ namespace ProyectoFinalOut
             Ventana2 vt2 = new Ventana2();
             this.Hide();
             vt2.ShowDialog(); //Muestro formulario
+        }
+
+        private void frmRurta14_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRecomendaciones_Click(object sender, EventArgs e)
+        {
+            frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            this.Hide();
+            fr.ShowDialog(); //Muestro formulario
         }
     }
 }

@@ -30,7 +30,7 @@ namespace ProyectoFinalOut
         {
             Ventana2 vt2 = new Ventana2();
             this.Hide();
-            vt2.ShowDialog();
+            vt2.ShowDialog(); //Muestro formulario
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -58,6 +58,13 @@ namespace ProyectoFinalOut
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRecomendaciones_Click(object sender, EventArgs e)
+        {
+            frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            this.Hide();
+            fr.ShowDialog(); //Muestro formulario
         }
     }
 }

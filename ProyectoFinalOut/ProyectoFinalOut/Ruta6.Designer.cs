@@ -46,6 +46,7 @@
             button1 = new Button();
             label6 = new Label();
             pictureBox6 = new PictureBox();
+            btnRecomendaciones = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -187,7 +188,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(633, 443);
+            textBox1.Location = new Point(625, 370);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(251, 83);
@@ -197,7 +198,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(635, 404);
+            label5.Location = new Point(627, 331);
             label5.Name = "label5";
             label5.Size = new Size(222, 23);
             label5.TabIndex = 37;
@@ -205,7 +206,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(713, 532);
+            button1.Location = new Point(705, 459);
             button1.Name = "button1";
             button1.Size = new Size(85, 26);
             button1.TabIndex = 38;
@@ -222,17 +223,33 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(616, 392);
+            pictureBox6.Location = new Point(608, 319);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(286, 178);
             pictureBox6.TabIndex = 40;
             pictureBox6.TabStop = false;
+            // 
+            // btnRecomendaciones
+            // 
+            btnRecomendaciones.BackColor = SystemColors.ActiveCaption;
+            btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
+            btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
+            btnRecomendaciones.Location = new Point(596, 509);
+            btnRecomendaciones.Name = "btnRecomendaciones";
+            btnRecomendaciones.Size = new Size(298, 58);
+            btnRecomendaciones.TabIndex = 46;
+            btnRecomendaciones.Text = "VER FORO DE RECOMENDACIONES \r\nY QUEJAS";
+            btnRecomendaciones.TextAlign = ContentAlignment.MiddleLeft;
+            btnRecomendaciones.UseVisualStyleBackColor = false;
+            btnRecomendaciones.Click += btnRecomendaciones_Click;
             // 
             // frmRuta6
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(btnRecomendaciones);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label5);
@@ -281,5 +298,6 @@
         private Button button1;
         private Label label6;
         private PictureBox pictureBox6;
+        private Button btnRecomendaciones;
     }
 }

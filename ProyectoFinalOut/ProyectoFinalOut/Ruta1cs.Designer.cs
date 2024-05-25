@@ -45,6 +45,7 @@
             textBox1 = new TextBox();
             label5 = new Label();
             pictureBox6 = new PictureBox();
+            btnRecomendaciones = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -185,7 +186,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(714, 526);
+            button1.Location = new Point(709, 425);
             button1.Name = "button1";
             button1.Size = new Size(85, 26);
             button1.TabIndex = 43;
@@ -194,7 +195,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(634, 437);
+            textBox1.Location = new Point(629, 336);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(251, 83);
@@ -204,7 +205,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(636, 398);
+            label5.Location = new Point(631, 297);
             label5.Name = "label5";
             label5.Size = new Size(222, 23);
             label5.TabIndex = 42;
@@ -212,17 +213,34 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(617, 386);
+            pictureBox6.Location = new Point(612, 285);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(286, 178);
             pictureBox6.TabIndex = 44;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
+            // 
+            // btnRecomendaciones
+            // 
+            btnRecomendaciones.BackColor = SystemColors.ActiveCaption;
+            btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
+            btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
+            btnRecomendaciones.Location = new Point(612, 482);
+            btnRecomendaciones.Name = "btnRecomendaciones";
+            btnRecomendaciones.Size = new Size(298, 58);
+            btnRecomendaciones.TabIndex = 45;
+            btnRecomendaciones.Text = "VER FORO DE RECOMENDACIONES \r\nY QUEJAS";
+            btnRecomendaciones.TextAlign = ContentAlignment.MiddleLeft;
+            btnRecomendaciones.UseVisualStyleBackColor = false;
+            btnRecomendaciones.Click += btnRecomendaciones_Click;
             // 
             // frmRuta1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(btnRecomendaciones);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label5);
@@ -270,5 +288,6 @@
         private TextBox textBox1;
         private Label label5;
         private PictureBox pictureBox6;
+        private Button btnRecomendaciones;
     }
 }

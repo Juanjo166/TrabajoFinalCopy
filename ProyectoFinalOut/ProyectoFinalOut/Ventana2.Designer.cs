@@ -33,15 +33,17 @@
             pictureBox1 = new PictureBox();
             btnSalir = new Button();
             btnSiguiente = new Button();
-            txtNombre = new TextBox();
             label2 = new Label();
             label1 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
             label4 = new Label();
-            textBox2 = new TextBox();
             label5 = new Label();
             button1 = new Button();
+            txtNombre2 = new TextBox();
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            comboBox3 = new ComboBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -96,14 +98,6 @@
             btnSiguiente.UseVisualStyleBackColor = false;
             btnSiguiente.Click += btnSiguiente_Click;
             // 
-            // txtNombre
-            // 
-            txtNombre.BackColor = SystemColors.InactiveCaption;
-            txtNombre.Location = new Point(127, 165);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(272, 27);
-            txtNombre.TabIndex = 18;
-            // 
             // label2
             // 
             label2.AutoSize = true;
@@ -132,16 +126,8 @@
             label3.Name = "label3";
             label3.Size = new Size(321, 46);
             label3.TabIndex = 23;
-            label3.Text = "¡Bienvenido Juan! \r\nEstamos para ayudarlo en su recorrido.";
+            label3.Text = "¡Bienvenido! \r\nEstamos para ayudarlo en su recorrido.";
             label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = SystemColors.InactiveCaption;
-            textBox1.Location = new Point(128, 249);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(271, 27);
-            textBox1.TabIndex = 25;
             // 
             // label4
             // 
@@ -152,15 +138,6 @@
             label4.Size = new Size(234, 21);
             label4.TabIndex = 24;
             label4.Text = "Ingresa a donde se dirige:";
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = SystemColors.InactiveCaption;
-            textBox2.Location = new Point(128, 327);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(146, 27);
-            textBox2.TabIndex = 27;
-            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label5
             // 
@@ -188,22 +165,71 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // txtNombre2
+            // 
+            txtNombre2.Location = new Point(320, 45);
+            txtNombre2.Multiline = true;
+            txtNombre2.Name = "txtNombre2";
+            txtNombre2.ReadOnly = true;
+            txtNombre2.Size = new Size(125, 34);
+            txtNombre2.TabIndex = 29;
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(127, 164);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(272, 28);
+            comboBox1.TabIndex = 30;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(127, 253);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(272, 28);
+            comboBox2.TabIndex = 31;
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(127, 338);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(148, 28);
+            comboBox3.TabIndex = 32;
+            // 
+            // button2
+            // 
+            button2.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.ImageAlign = ContentAlignment.MiddleRight;
+            button2.Location = new Point(127, 394);
+            button2.Name = "button2";
+            button2.Size = new Size(283, 48);
+            button2.TabIndex = 33;
+            button2.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Ventana2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(button2);
+            Controls.Add(comboBox3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(txtNombre2);
             Controls.Add(button1);
-            Controls.Add(textBox2);
             Controls.Add(label5);
-            Controls.Add(textBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnSalir);
             Controls.Add(btnSiguiente);
-            Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "Ventana2";
@@ -221,14 +247,16 @@
         private PictureBox pictureBox1;
         private Button btnSalir;
         private Button btnSiguiente;
-        private TextBox txtNombre;
         private Label label2;
         private Label label1;
         private Label label3;
-        private TextBox textBox1;
         private Label label4;
-        private TextBox textBox2;
         private Label label5;
         private Button button1;
+        private TextBox txtNombre2;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private ComboBox comboBox3;
+        private Button button2;
     }
 }

@@ -135,6 +135,7 @@
             button1.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 

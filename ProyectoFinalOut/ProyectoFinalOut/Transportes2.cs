@@ -15,7 +15,6 @@ namespace ProyectoFinalOut
         public Transportes2()
         {
             InitializeComponent();
-            InitializeComponent();
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
             MaximizeBox = false; // Deshabilitar el botón de maximizar
