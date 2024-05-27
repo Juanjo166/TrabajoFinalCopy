@@ -15,8 +15,6 @@ namespace ProyectoFinalOut
         public frmVentana3Respuesta()
         {
             InitializeComponent();
-            InitializeComponent();
-            InitializeComponent();
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
 
@@ -46,6 +44,11 @@ namespace ProyectoFinalOut
             frmTutransporti tp = new frmTutransporti();
             this.Hide();
             tp.ShowDialog(); //Muestro formulario
+        }
+
+        private void frmVentana3Respuesta_Load(object sender, EventArgs e)
+        {
+            lblBienvenida.Text = $"¡Bienvenido {Usuario.Nombre} Estamos para \n ayudarlo en su recorrido!";
         }
     }
 }

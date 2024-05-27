@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTutransporti));
-            label2 = new Label();
+            lblBienvenida = new Label();
             btnRuta1 = new Button();
             btnSiguiente = new Button();
             btnSalir = new Button();
@@ -44,16 +44,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
-            // label2
+            // lblBienvenida
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(105, 49);
-            label2.Name = "label2";
-            label2.Size = new Size(249, 34);
-            label2.TabIndex = 1;
-            label2.Text = " ¡Hola, elige el numero del autobus \r\ndel que quieres informarte!";
-            label2.Click += label2_Click;
+            lblBienvenida.AutoSize = true;
+            lblBienvenida.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblBienvenida.Location = new Point(105, 49);
+            lblBienvenida.Name = "lblBienvenida";
+            lblBienvenida.Size = new Size(249, 34);
+            lblBienvenida.TabIndex = 1;
+            lblBienvenida.Text = " ¡Hola, elige el numero del autobus \r\ndel que quieres informarte!";
+            lblBienvenida.Click += label2_Click;
             // 
             // btnRuta1
             // 
@@ -213,7 +213,7 @@
             Controls.Add(btnSalir);
             Controls.Add(btnRuta1);
             Controls.Add(btnSiguiente);
-            Controls.Add(label2);
+            Controls.Add(lblBienvenida);
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmTutransporti";
             Text = "TuTransporti";
@@ -225,7 +225,7 @@
         }
 
         #endregion
-        private Label label2;
+        private Label lblBienvenida;
         private Button btnRuta1;
         private Button btnSiguiente;
         private Button btnSalir;

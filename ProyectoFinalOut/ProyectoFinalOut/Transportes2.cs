@@ -23,7 +23,7 @@ namespace ProyectoFinalOut
 
         private void Transportes2_Load(object sender, EventArgs e)
         {
-
+            lblBienvenida.Text = $"¡Hola {Usuario.Nombre}, elige el numero de la ruta \n del que quiera informarse!";
         }
 
         private void btnSalir_Click(object sender, EventArgs e)

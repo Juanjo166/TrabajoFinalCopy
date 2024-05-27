@@ -29,7 +29,7 @@ namespace ProyectoFinalOut
 
         private void Ventana2_Load(object sender, EventArgs e)
         {
-
+            lblBienvenida.Text = $"¡Bienvenido {Usuario.Nombre} Estamos para \n ayudarlo en su recorrido!";
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -56,6 +56,13 @@ namespace ProyectoFinalOut
             frmNoticias Vt2 = new frmNoticias();
             this.Hide();
             Vt2.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            frmTransporti vp = new frmTransporti();
+            this.Hide();
+            vp.ShowDialog();
         }
     }
 }

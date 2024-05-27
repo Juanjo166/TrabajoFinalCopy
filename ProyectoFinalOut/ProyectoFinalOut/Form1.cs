@@ -18,6 +18,7 @@ namespace ProyectoFinalOut
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
+            Usuario.Nombre = txtNombre.Text;
             Ventana2 Vt2 = new Ventana2();
             this.Hide();
             Vt2.ShowDialog(); //Muestro formulario
@@ -47,7 +48,12 @@ namespace ProyectoFinalOut
             frmNoticias Vt2 = new frmNoticias();
             this.Hide();
             Vt2.ShowDialog(); //Muestro formulario
-            
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

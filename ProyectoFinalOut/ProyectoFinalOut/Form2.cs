@@ -40,8 +40,10 @@ namespace ProyectoFinalOut
 
         private void frmTutransporti_Load(object sender, EventArgs e)
         {
-
+            lblBienvenida.Text = $"¡Hola {Usuario.Nombre}, elige el numero de la ruta \n del que quiera informarse!";
         }
+        // ¡Hola, elige el numero del autobus 
+        //del que quieres informarte!
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
