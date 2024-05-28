@@ -31,30 +31,30 @@ namespace ProyectoFinalOut
 
         }
 
-        private void btnCasa_Click(object sender, EventArgs e)
+        private void btnRecomendaciones_Click(object sender, EventArgs e)
+        {
+            frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            this.Hide();
+            fr.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnCasa_Click_1(object sender, EventArgs e)
         {
             Ventana2 vt2 = new Ventana2();
             this.Hide();
             vt2.ShowDialog();
         }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
+        private void btnAtras_Click(object sender, EventArgs e)
         {
             frmTutransporti tp4 = new frmTutransporti();
             this.Hide();
             tp4.ShowDialog();
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void btnSSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void btnRecomendaciones_Click(object sender, EventArgs e)
-        {
-            frmForoRecomendaciones fr = new frmForoRecomendaciones();
-            this.Hide();
-            fr.ShowDialog(); //Muestro formulario
         }
     }
 }

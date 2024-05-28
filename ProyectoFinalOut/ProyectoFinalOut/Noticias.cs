@@ -31,16 +31,16 @@ namespace ProyectoFinalOut
 
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void btnCasa_Click(object sender, EventArgs e)
         {
             Ventana2 vt2 = new Ventana2();
             this.Hide();
             vt2.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnSSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -23,19 +23,19 @@ namespace ProyectoFinalOut
             FormBorderStyle = FormBorderStyle.FixedSingle;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void ForoRecomendaciones_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCasa_Click(object sender, EventArgs e)
         {
             Ventana2 vt2 = new Ventana2();
             this.Hide();
             vt2.ShowDialog();
         }
 
-        private void ForoRecomendaciones_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
         }

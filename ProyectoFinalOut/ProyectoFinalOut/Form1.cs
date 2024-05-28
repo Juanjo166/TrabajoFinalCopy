@@ -16,20 +16,6 @@ namespace ProyectoFinalOut
 
         }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            Usuario.Nombre = txtNombre.Text;
-            Ventana2 Vt2 = new Ventana2();
-            this.Hide();
-            Vt2.ShowDialog(); //Muestro formulario
-
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void frmTransporti_Load(object sender, EventArgs e)
         {
             //HOLA CON TODOS vomate tu gaaaaaaa
@@ -54,6 +40,19 @@ namespace ProyectoFinalOut
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSiguiente_Click_1(object sender, EventArgs e)
+        {
+            Usuario.Nombre = txtNombre.Text;
+            Ventana2 Vt2 = new Ventana2();
+            this.Hide();
+            Vt2.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

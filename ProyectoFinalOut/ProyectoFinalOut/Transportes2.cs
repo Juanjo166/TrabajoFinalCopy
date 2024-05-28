@@ -26,9 +26,32 @@ namespace ProyectoFinalOut
             lblBienvenida.Text = $"¡Hola {Usuario.Nombre}, elige el numero de la ruta \n del que quiera informarse!";
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
+        private void btnRuta8_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+            frmRuta8 rt8 = new frmRuta8();
+            this.Hide();
+            rt8.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnRuta14_Click(object sender, EventArgs e)
+        {
+            frmRurta14 rt14 = new frmRurta14();
+            this.Hide();
+            rt14.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnRuta21_Click(object sender, EventArgs e)
+        {
+            frmRuta21 rt21 = new frmRuta21();
+            this.Hide();
+            rt21.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnCasa_Click(object sender, EventArgs e)
+        {
+            Ventana2 vt2 = new Ventana2();
+            this.Hide();
+            vt2.ShowDialog(); //Muestro formulario
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -38,33 +61,9 @@ namespace ProyectoFinalOut
             tp3.ShowDialog(); //Muestro formulario
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnSSalir_Click(object sender, EventArgs e)
         {
-            Ventana2 vt2 = new Ventana2();
-            this.Hide();
-            vt2.ShowDialog(); //Muestro formulario
-        }
-
-        private void btnRuta8_Click(object sender, EventArgs e)
-        {
-            frmRuta8 rt8 = new frmRuta8();
-            this.Hide();
-            rt8.ShowDialog(); //Muestro formulario
-        }
-
-        private void btbRuta14_Click(object sender, EventArgs e)
-        {
-            frmRurta14 rt14 = new frmRurta14();
-            this.Hide();
-            rt14.ShowDialog(); //Muestro formulario
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmRuta21 rt21 = new frmRuta21();
-            this.Hide();
-            rt21.ShowDialog(); //Muestro formulario
-
+            Application.Exit();
         }
     }
 }

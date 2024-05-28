@@ -32,25 +32,6 @@ namespace ProyectoFinalOut
             lblBienvenida.Text = $"¡Bienvenido {Usuario.Nombre} Estamos para \n ayudarlo en su recorrido!";
         }
 
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmTutransporti tp = new frmTutransporti();
-            this.Hide();
-            tp.ShowDialog(); //Muestro formulario
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            frmVentana3Respuesta vtr3 = new frmVentana3Respuesta();
-            this.Hide();
-            vtr3.ShowDialog(); //Muestro formulario
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             frmNoticias Vt2 = new frmNoticias();
@@ -58,11 +39,30 @@ namespace ProyectoFinalOut
             Vt2.ShowDialog(); //Muestro formulario
         }
 
-        private void btnAtras_Click(object sender, EventArgs e)
+        private void btnAtras_Click_1(object sender, EventArgs e)
         {
             frmTransporti vp = new frmTransporti();
             this.Hide();
             vp.ShowDialog();
+        }
+
+        private void btnSiguiente_Click_1(object sender, EventArgs e)
+        {
+            frmVentana3Respuesta vtr3 = new frmVentana3Respuesta();
+            this.Hide();
+            vtr3.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnSSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnVerRutas_Click(object sender, EventArgs e)
+        {
+            frmTutransporti tp = new frmTutransporti();
+            this.Hide();
+            tp.ShowDialog(); //Muestro formulario
         }
     }
 }

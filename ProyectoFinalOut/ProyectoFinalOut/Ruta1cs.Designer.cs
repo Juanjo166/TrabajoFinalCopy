@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRuta1));
-            btnSalir = new Button();
-            btnCasa = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -40,12 +38,14 @@
             label3 = new Label();
             label4 = new Label();
             pictureBox5 = new PictureBox();
-            btnSiguiente = new Button();
             button1 = new Button();
             textBox1 = new TextBox();
             label5 = new Label();
             pictureBox6 = new PictureBox();
             btnRecomendaciones = new Button();
+            btnCasa = new Botones();
+            btnAtras = new Botones();
+            btnSSalir = new Botones();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -54,69 +54,43 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
-            // btnSalir
-            // 
-            btnSalir.BackColor = SystemColors.GradientActiveCaption;
-            btnSalir.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
-            btnSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSalir.Location = new Point(371, 470);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(99, 96);
-            btnSalir.TabIndex = 13;
-            btnSalir.Text = "Salir";
-            btnSalir.TextAlign = ContentAlignment.BottomCenter;
-            btnSalir.UseVisualStyleBackColor = false;
-            btnSalir.Click += btnSalir_Click;
-            // 
-            // btnCasa
-            // 
-            btnCasa.BackColor = SystemColors.GradientActiveCaption;
-            btnCasa.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
-            btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(100, 470);
-            btnCasa.Name = "btnCasa";
-            btnCasa.Size = new Size(95, 96);
-            btnCasa.TabIndex = 11;
-            btnCasa.Text = "Casa";
-            btnCasa.TextAlign = ContentAlignment.BottomCenter;
-            btnCasa.UseVisualStyleBackColor = false;
-            btnCasa.Click += btnCasa_Click;
-            // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(579, -1);
+            pictureBox1.Location = new Point(507, -1);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(348, 613);
+            pictureBox1.Size = new Size(304, 460);
             pictureBox1.TabIndex = 14;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(64, 85);
+            pictureBox2.Location = new Point(56, 64);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(481, 197);
+            pictureBox2.Size = new Size(421, 148);
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(64, 317);
+            pictureBox3.Location = new Point(56, 238);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(233, 116);
+            pictureBox3.Size = new Size(204, 87);
             pictureBox3.TabIndex = 16;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(321, 317);
+            pictureBox4.Location = new Point(281, 238);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(180, 113);
+            pictureBox4.Size = new Size(158, 85);
             pictureBox4.TabIndex = 17;
             pictureBox4.TabStop = false;
             // 
@@ -124,9 +98,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(100, 61);
+            label1.Location = new Point(88, 46);
             label1.Name = "label1";
-            label1.Size = new Size(409, 21);
+            label1.Size = new Size(330, 17);
             label1.TabIndex = 18;
             label1.Text = "A continuación mostraremos todo su recorrido";
             // 
@@ -134,9 +108,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(91, 285);
+            label2.Location = new Point(80, 214);
             label2.Name = "label2";
-            label2.Size = new Size(161, 21);
+            label2.Size = new Size(130, 17);
             label2.TabIndex = 19;
             label2.Text = "Color del autobus";
             // 
@@ -144,9 +118,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(371, 285);
+            label3.Location = new Point(325, 214);
             label3.Name = "label3";
-            label3.Size = new Size(68, 21);
+            label3.Size = new Size(54, 17);
             label3.TabIndex = 20;
             label3.Text = "Tarifas";
             // 
@@ -154,9 +128,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(64, 17);
+            label4.Location = new Point(56, 13);
             label4.Name = "label4";
-            label4.Size = new Size(73, 21);
+            label4.Size = new Size(60, 17);
             label4.TabIndex = 21;
             label4.Text = "RUTA 1";
             // 
@@ -164,58 +138,48 @@
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(-2, -1);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(60, 67);
+            pictureBox5.Size = new Size(52, 50);
             pictureBox5.TabIndex = 22;
             pictureBox5.TabStop = false;
             // 
-            // btnSiguiente
-            // 
-            btnSiguiente.BackColor = SystemColors.GradientActiveCaption;
-            btnSiguiente.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
-            btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(232, 470);
-            btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(108, 96);
-            btnSiguiente.TabIndex = 23;
-            btnSiguiente.Text = "Atras";
-            btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
-            btnSiguiente.UseVisualStyleBackColor = false;
-            btnSiguiente.Click += btnSiguiente_Click;
-            // 
             // button1
             // 
-            button1.Location = new Point(709, 425);
+            button1.Cursor = Cursors.Hand;
+            button1.Location = new Point(620, 319);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(85, 26);
+            button1.Size = new Size(74, 20);
             button1.TabIndex = 43;
             button1.Text = "Enviar";
             button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(629, 336);
+            textBox1.Location = new Point(550, 252);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(251, 83);
+            textBox1.Size = new Size(220, 63);
             textBox1.TabIndex = 41;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(631, 297);
+            label5.Location = new Point(552, 223);
             label5.Name = "label5";
-            label5.Size = new Size(222, 23);
+            label5.Size = new Size(189, 19);
             label5.TabIndex = 42;
             label5.Text = "Recomendaciones y quejas";
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(612, 285);
+            pictureBox6.Location = new Point(536, 214);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(286, 178);
+            pictureBox6.Size = new Size(250, 134);
             pictureBox6.TabIndex = 44;
             pictureBox6.TabStop = false;
             pictureBox6.Click += pictureBox6_Click;
@@ -223,29 +187,90 @@
             // btnRecomendaciones
             // 
             btnRecomendaciones.BackColor = SystemColors.ActiveCaption;
+            btnRecomendaciones.Cursor = Cursors.Hand;
             btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
             btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
-            btnRecomendaciones.Location = new Point(612, 482);
+            btnRecomendaciones.Location = new Point(536, 362);
+            btnRecomendaciones.Margin = new Padding(3, 2, 3, 2);
             btnRecomendaciones.Name = "btnRecomendaciones";
-            btnRecomendaciones.Size = new Size(298, 58);
+            btnRecomendaciones.Size = new Size(261, 44);
             btnRecomendaciones.TabIndex = 45;
             btnRecomendaciones.Text = "VER FORO DE RECOMENDACIONES \r\nY QUEJAS";
             btnRecomendaciones.TextAlign = ContentAlignment.MiddleLeft;
             btnRecomendaciones.UseVisualStyleBackColor = false;
             btnRecomendaciones.Click += btnRecomendaciones_Click;
             // 
+            // btnCasa
+            // 
+            btnCasa.BackColor = Color.MediumSlateBlue;
+            btnCasa.Cursor = Cursors.Hand;
+            btnCasa.FlatAppearance.BorderSize = 0;
+            btnCasa.FlatStyle = FlatStyle.Flat;
+            btnCasa.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCasa.ForeColor = Color.Black;
+            btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
+            btnCasa.ImageAlign = ContentAlignment.TopCenter;
+            btnCasa.Location = new Point(12, 354);
+            btnCasa.Name = "btnCasa";
+            btnCasa.Size = new Size(150, 94);
+            btnCasa.TabIndex = 82;
+            btnCasa.Text = "CASA";
+            btnCasa.TextAlign = ContentAlignment.BottomCenter;
+            btnCasa.UseVisualStyleBackColor = false;
+            btnCasa.Click += btnCasa_Click_1;
+            // 
+            // btnAtras
+            // 
+            btnAtras.BackColor = Color.MediumSlateBlue;
+            btnAtras.Cursor = Cursors.Hand;
+            btnAtras.FlatAppearance.BorderSize = 0;
+            btnAtras.FlatStyle = FlatStyle.Flat;
+            btnAtras.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAtras.ForeColor = Color.Black;
+            btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
+            btnAtras.ImageAlign = ContentAlignment.TopCenter;
+            btnAtras.Location = new Point(181, 354);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(150, 94);
+            btnAtras.TabIndex = 84;
+            btnAtras.Text = "ATRAS";
+            btnAtras.TextAlign = ContentAlignment.BottomCenter;
+            btnAtras.UseVisualStyleBackColor = false;
+            btnAtras.Click += btnAtras_Click;
+            // 
+            // btnSSalir
+            // 
+            btnSSalir.BackColor = Color.MediumSlateBlue;
+            btnSSalir.Cursor = Cursors.Hand;
+            btnSSalir.FlatAppearance.BorderSize = 0;
+            btnSSalir.FlatStyle = FlatStyle.Flat;
+            btnSSalir.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSSalir.ForeColor = Color.Black;
+            btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
+            btnSSalir.ImageAlign = ContentAlignment.TopCenter;
+            btnSSalir.Location = new Point(351, 354);
+            btnSSalir.Name = "btnSSalir";
+            btnSSalir.Size = new Size(150, 94);
+            btnSSalir.TabIndex = 85;
+            btnSSalir.Text = "SALIR";
+            btnSSalir.TextAlign = ContentAlignment.BottomCenter;
+            btnSSalir.UseVisualStyleBackColor = false;
+            btnSSalir.Click += btnSSalir_Click;
+            // 
             // frmRuta1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(922, 613);
+            ClientSize = new Size(807, 460);
+            Controls.Add(btnSSalir);
+            Controls.Add(btnAtras);
+            Controls.Add(btnCasa);
             Controls.Add(btnRecomendaciones);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label5);
             Controls.Add(pictureBox6);
-            Controls.Add(btnSiguiente);
             Controls.Add(pictureBox5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -255,8 +280,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Controls.Add(btnSalir);
-            Controls.Add(btnCasa);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmRuta1";
             Text = "Ruta1";
             Load += frmRuta1_Load;
@@ -271,9 +295,6 @@
         }
 
         #endregion
-
-        private Button btnSalir;
-        private Button btnCasa;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
@@ -283,11 +304,13 @@
         private Label label3;
         private Label label4;
         private PictureBox pictureBox5;
-        private Button btnSiguiente;
         private Button button1;
         private TextBox textBox1;
         private Label label5;
         private PictureBox pictureBox6;
         private Button btnRecomendaciones;
+        private Botones btnCasa;
+        private Botones btnAtras;
+        private Botones btnSSalir;
     }
 }

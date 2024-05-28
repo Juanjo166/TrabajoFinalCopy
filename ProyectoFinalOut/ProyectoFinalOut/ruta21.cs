@@ -27,27 +27,6 @@ namespace ProyectoFinalOut
 
         }
 
-        private void btnCasa_Click(object sender, EventArgs e)
-        {
-            Ventana2 vt2 = new Ventana2();
-            this.Hide();
-            vt2.ShowDialog();
-        }
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            Transportes2 tp2 = new Transportes2();
-            this.Hide();
-            tp2.ShowDialog();
-
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-        }
-
         private void frmRuta21_Load(object sender, EventArgs e)
         {
 
@@ -58,6 +37,25 @@ namespace ProyectoFinalOut
             frmForoRecomendaciones fr = new frmForoRecomendaciones();
             this.Hide();
             fr.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnCasa_Click_1(object sender, EventArgs e)
+        {
+            Ventana2 vt2 = new Ventana2();
+            this.Hide();
+            vt2.ShowDialog();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Transportes2 tp2 = new Transportes2();
+            this.Hide();
+            tp2.ShowDialog();
+        }
+
+        private void btnSSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
