@@ -29,20 +29,37 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTransporti));
+            btnSiguiente = new Button();
             txtNombre = new TextBox();
             label2 = new Label();
             label1 = new Label();
+            btnSalir = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             button1 = new Button();
             label3 = new Label();
             pictureBox3 = new PictureBox();
-            btnSiguiente = new Botones();
-            btnSalir = new Botones();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
+            // 
+            // btnSiguiente
+            // 
+            btnSiguiente.BackColor = SystemColors.GradientActiveCaption;
+            btnSiguiente.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSiguiente.ForeColor = SystemColors.ActiveCaptionText;
+            btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
+            btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
+            btnSiguiente.Location = new Point(99, 290);
+            btnSiguiente.Margin = new Padding(3, 2, 3, 2);
+            btnSiguiente.Name = "btnSiguiente";
+            btnSiguiente.Size = new Size(94, 73);
+            btnSiguiente.TabIndex = 10;
+            btnSiguiente.Text = "Siguiente";
+            btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
+            btnSiguiente.UseVisualStyleBackColor = false;
+            btnSiguiente.Click += btnSiguiente_Click;
             // 
             // txtNombre
             // 
@@ -52,7 +69,6 @@
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new Size(154, 23);
             txtNombre.TabIndex = 8;
-            txtNombre.TextChanged += txtNombre_TextChanged;
             // 
             // label2
             // 
@@ -75,15 +91,33 @@
             label1.Text = "Transporti";
             label1.Click += label1_Click;
             // 
+            // btnSalir
+            // 
+            btnSalir.BackColor = SystemColors.GradientActiveCaption;
+            btnSalir.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSalir.ForeColor = SystemColors.ActiveCaptionText;
+            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
+            btnSalir.ImageAlign = ContentAlignment.TopCenter;
+            btnSalir.Location = new Point(224, 290);
+            btnSalir.Margin = new Padding(3, 2, 3, 2);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(100, 73);
+            btnSalir.TabIndex = 12;
+            btnSalir.Text = "Salir";
+            btnSalir.TextAlign = ContentAlignment.BottomCenter;
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
+            // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(477, 16);
+            pictureBox1.Image = Properties.Resources.TRASD;
+            pictureBox1.Location = new Point(417, 11);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(303, 425);
+            pictureBox1.Size = new Size(832, 652);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox2
             // 
@@ -133,57 +167,19 @@
             pictureBox3.TabIndex = 17;
             pictureBox3.TabStop = false;
             // 
-            // btnSiguiente
-            // 
-            btnSiguiente.BackColor = Color.MediumSlateBlue;
-            btnSiguiente.Cursor = Cursors.Hand;
-            btnSiguiente.FlatAppearance.BorderSize = 0;
-            btnSiguiente.FlatStyle = FlatStyle.Flat;
-            btnSiguiente.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSiguiente.ForeColor = Color.Black;
-            btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
-            btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(58, 272);
-            btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(140, 93);
-            btnSiguiente.TabIndex = 19;
-            btnSiguiente.Text = "SIGUIENTE";
-            btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
-            btnSiguiente.UseVisualStyleBackColor = false;
-            btnSiguiente.Click += btnSiguiente_Click_1;
-            // 
-            // btnSalir
-            // 
-            btnSalir.BackColor = Color.MediumSlateBlue;
-            btnSalir.Cursor = Cursors.Hand;
-            btnSalir.FlatAppearance.BorderSize = 0;
-            btnSalir.FlatStyle = FlatStyle.Flat;
-            btnSalir.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSalir.ForeColor = Color.Black;
-            btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
-            btnSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSalir.Location = new Point(204, 278);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(150, 87);
-            btnSalir.TabIndex = 20;
-            btnSalir.Text = "SALIR";
-            btnSalir.TextAlign = ContentAlignment.BottomCenter;
-            btnSalir.UseVisualStyleBackColor = false;
-            btnSalir.Click += btnSalir_Click_1;
-            // 
             // frmTransporti
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(807, 460);
-            Controls.Add(btnSalir);
-            Controls.Add(btnSiguiente);
             Controls.Add(pictureBox3);
             Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Controls.Add(btnSalir);
+            Controls.Add(btnSiguiente);
             Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -199,15 +195,15 @@
         }
 
         #endregion
+        private Button btnSiguiente;
         private TextBox txtNombre;
         private Label label2;
         private Label label1;
+        private Button btnSalir;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Button button1;
         private Label label3;
         private PictureBox pictureBox3;
-        private Botones btnSiguiente;
-        private Botones btnSalir;
     }
 }
