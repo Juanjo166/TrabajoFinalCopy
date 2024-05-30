@@ -36,7 +36,7 @@
             btnSalir = new Button();
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            button1 = new Button();
+            btnNoticias = new Button();
             label3 = new Label();
             pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -51,10 +51,9 @@
             btnSiguiente.ForeColor = SystemColors.ActiveCaptionText;
             btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
             btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(99, 290);
-            btnSiguiente.Margin = new Padding(3, 2, 3, 2);
+            btnSiguiente.Location = new Point(113, 387);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(94, 73);
+            btnSiguiente.Size = new Size(107, 97);
             btnSiguiente.TabIndex = 10;
             btnSiguiente.Text = "Siguiente";
             btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
@@ -64,19 +63,18 @@
             // txtNombre
             // 
             txtNombre.BackColor = SystemColors.InactiveCaption;
-            txtNombre.Location = new Point(132, 167);
-            txtNombre.Margin = new Padding(3, 2, 3, 2);
+            txtNombre.Location = new Point(151, 223);
             txtNombre.Name = "txtNombre";
-            txtNombre.Size = new Size(154, 23);
+            txtNombre.Size = new Size(175, 27);
             txtNombre.TabIndex = 8;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(132, 142);
+            label2.Location = new Point(151, 189);
             label2.Name = "label2";
-            label2.Size = new Size(144, 17);
+            label2.Size = new Size(176, 21);
             label2.TabIndex = 7;
             label2.Text = "Ingresa tu nombre:";
             // 
@@ -84,9 +82,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(158, 42);
+            label1.Location = new Point(181, 56);
             label1.Name = "label1";
-            label1.Size = new Size(94, 19);
+            label1.Size = new Size(114, 24);
             label1.TabIndex = 6;
             label1.Text = "Transporti";
             label1.Click += label1_Click;
@@ -98,10 +96,9 @@
             btnSalir.ForeColor = SystemColors.ActiveCaptionText;
             btnSalir.Image = (Image)resources.GetObject("btnSalir.Image");
             btnSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSalir.Location = new Point(224, 290);
-            btnSalir.Margin = new Padding(3, 2, 3, 2);
+            btnSalir.Location = new Point(256, 387);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(100, 73);
+            btnSalir.Size = new Size(114, 97);
             btnSalir.TabIndex = 12;
             btnSalir.Text = "Salir";
             btnSalir.TextAlign = ContentAlignment.BottomCenter;
@@ -111,10 +108,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.TRASD;
-            pictureBox1.Location = new Point(417, 11);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(477, 15);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(832, 652);
+            pictureBox1.Size = new Size(951, 869);
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
@@ -122,27 +118,25 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(180, 62);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(206, 83);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(56, 53);
+            pictureBox2.Size = new Size(64, 71);
             pictureBox2.TabIndex = 14;
             pictureBox2.TabStop = false;
             // 
-            // button1
+            // btnNoticias
             // 
-            button1.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleRight;
-            button1.Location = new Point(99, 220);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(248, 36);
-            button1.TabIndex = 15;
-            button1.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnNoticias.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnNoticias.Image = (Image)resources.GetObject("btnNoticias.Image");
+            btnNoticias.ImageAlign = ContentAlignment.MiddleRight;
+            btnNoticias.Location = new Point(113, 293);
+            btnNoticias.Name = "btnNoticias";
+            btnNoticias.Size = new Size(283, 48);
+            btnNoticias.TabIndex = 15;
+            btnNoticias.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
+            btnNoticias.TextAlign = ContentAlignment.MiddleLeft;
+            btnNoticias.UseVisualStyleBackColor = true;
+            btnNoticias.Click += button1_Click;
             // 
             // label3
             // 
@@ -150,9 +144,9 @@
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Green;
             label3.ImageAlign = ContentAlignment.MiddleLeft;
-            label3.Location = new Point(132, 390);
+            label3.Location = new Point(124, 520);
             label3.Name = "label3";
-            label3.Size = new Size(262, 34);
+            label3.Size = new Size(328, 42);
             label3.TabIndex = 16;
             label3.Text = "El uso del transporte público es \r\nbueno para reducir la contaminación.";
             label3.TextAlign = ContentAlignment.MiddleLeft;
@@ -160,22 +154,21 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(66, 379);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(48, 505);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(61, 56);
+            pictureBox3.Size = new Size(70, 75);
             pictureBox3.TabIndex = 17;
             pictureBox3.TabStop = false;
             // 
             // frmTransporti
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(807, 460);
+            ClientSize = new Size(922, 613);
             Controls.Add(pictureBox3);
             Controls.Add(label3);
-            Controls.Add(button1);
+            Controls.Add(btnNoticias);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(btnSalir);
@@ -183,7 +176,6 @@
             Controls.Add(txtNombre);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmTransporti";
             Text = "TransPorti";
             Load += frmTransporti_Load;
@@ -202,7 +194,7 @@
         private Button btnSalir;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Button button1;
+        private Button btnNoticias;
         private Label label3;
         private PictureBox pictureBox3;
     }

@@ -36,35 +36,37 @@
             lblBienvenida = new Label();
             label4 = new Label();
             label5 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
-            button2 = new Button();
+            comboBoxUbicacion = new ComboBox();
+            comboBoxDestino = new ComboBox();
+            comboBoxHora = new ComboBox();
+            btnNoticias = new Button();
             btnAtras = new Botones();
             btnSSalir = new Botones();
-            btnSiguiente = new Botones();
+            btnBuscar = new Botones();
             btnVerRutas = new Botones();
+            pictureBox3 = new PictureBox();
+            textBoxResultado = new TextBox();
+            listBoxRutas = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-3, -2);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(-3, -3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(56, 48);
+            pictureBox2.Size = new Size(64, 64);
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(451, -2);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(515, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(355, 462);
+            pictureBox1.Size = new Size(406, 616);
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
             // 
@@ -72,9 +74,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(111, 98);
+            label2.Location = new Point(127, 112);
             label2.Name = "label2";
-            label2.Size = new Size(155, 17);
+            label2.Size = new Size(194, 21);
             label2.TabIndex = 17;
             label2.Text = "Ingresa su ubicación:";
             // 
@@ -82,9 +84,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(49, 14);
+            label1.Location = new Point(56, 19);
             label1.Name = "label1";
-            label1.Size = new Size(94, 19);
+            label1.Size = new Size(114, 24);
             label1.TabIndex = 16;
             label1.Text = "Transporti";
             // 
@@ -92,9 +94,9 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(90, 40);
+            lblBienvenida.Location = new Point(103, 52);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(272, 38);
+            lblBienvenida.Size = new Size(321, 46);
             lblBienvenida.TabIndex = 23;
             lblBienvenida.Text = "¡Bienvenido! \r\nEstamos para ayudarlo en su recorrido.";
             lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
@@ -103,9 +105,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(112, 161);
+            label4.Location = new Point(128, 196);
             label4.Name = "label4";
-            label4.Size = new Size(188, 17);
+            label4.Size = new Size(234, 21);
             label4.TabIndex = 24;
             label4.Text = "Ingresa a donde se dirige:";
             // 
@@ -113,58 +115,54 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(170, 225);
+            label5.Location = new Point(127, 279);
             label5.Name = "label5";
-            label5.Size = new Size(118, 17);
+            label5.Size = new Size(146, 21);
             label5.TabIndex = 26;
             label5.Text = "Ingresa la hora:";
             // 
-            // comboBox1
+            // comboBoxUbicacion
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(111, 123);
-            comboBox1.Margin = new Padding(3, 2, 3, 2);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(238, 23);
-            comboBox1.TabIndex = 30;
+            comboBoxUbicacion.FormattingEnabled = true;
+            comboBoxUbicacion.Location = new Point(127, 145);
+            comboBoxUbicacion.Name = "comboBoxUbicacion";
+            comboBoxUbicacion.Size = new Size(271, 28);
+            comboBoxUbicacion.TabIndex = 30;
             // 
-            // comboBox2
+            // comboBoxDestino
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(111, 190);
-            comboBox2.Margin = new Padding(3, 2, 3, 2);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(238, 23);
-            comboBox2.TabIndex = 31;
+            comboBoxDestino.FormattingEnabled = true;
+            comboBoxDestino.Location = new Point(127, 234);
+            comboBoxDestino.Name = "comboBoxDestino";
+            comboBoxDestino.Size = new Size(271, 28);
+            comboBoxDestino.TabIndex = 31;
             // 
-            // comboBox3
+            // comboBoxHora
             // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(170, 253);
-            comboBox3.Margin = new Padding(3, 2, 3, 2);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(130, 23);
-            comboBox3.TabIndex = 32;
+            comboBoxHora.FormattingEnabled = true;
+            comboBoxHora.Location = new Point(127, 316);
+            comboBoxHora.Name = "comboBoxHora";
+            comboBoxHora.Size = new Size(148, 28);
+            comboBoxHora.TabIndex = 32;
             // 
-            // button2
+            // btnNoticias
             // 
-            button2.Cursor = Cursors.Hand;
-            button2.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleRight;
-            button2.Location = new Point(147, 296);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(248, 36);
-            button2.TabIndex = 33;
-            button2.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            btnNoticias.Cursor = Cursors.Hand;
+            btnNoticias.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
+            btnNoticias.Image = (Image)resources.GetObject("btnNoticias.Image");
+            btnNoticias.ImageAlign = ContentAlignment.MiddleRight;
+            btnNoticias.Location = new Point(127, 436);
+            btnNoticias.Name = "btnNoticias";
+            btnNoticias.Size = new Size(283, 48);
+            btnNoticias.TabIndex = 33;
+            btnNoticias.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
+            btnNoticias.TextAlign = ContentAlignment.MiddleLeft;
+            btnNoticias.UseVisualStyleBackColor = true;
+            btnNoticias.Click += button2_Click;
             // 
             // btnAtras
             // 
-            btnAtras.BackColor = Color.MediumSlateBlue;
+            btnAtras.BackColor = Color.SteelBlue;
             btnAtras.Cursor = Cursors.Hand;
             btnAtras.FlatAppearance.BorderSize = 0;
             btnAtras.FlatStyle = FlatStyle.Flat;
@@ -172,9 +170,10 @@
             btnAtras.ForeColor = Color.Black;
             btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
             btnAtras.ImageAlign = ContentAlignment.TopCenter;
-            btnAtras.Location = new Point(12, 238);
+            btnAtras.Location = new Point(55, 500);
+            btnAtras.Margin = new Padding(3, 4, 3, 4);
             btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(117, 94);
+            btnAtras.Size = new Size(97, 97);
             btnAtras.TabIndex = 35;
             btnAtras.Text = "ATRAS";
             btnAtras.TextAlign = ContentAlignment.BottomCenter;
@@ -183,7 +182,7 @@
             // 
             // btnSSalir
             // 
-            btnSSalir.BackColor = Color.MediumSlateBlue;
+            btnSSalir.BackColor = Color.SteelBlue;
             btnSSalir.Cursor = Cursors.Hand;
             btnSSalir.FlatAppearance.BorderSize = 0;
             btnSSalir.FlatStyle = FlatStyle.Flat;
@@ -191,37 +190,39 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(149, 354);
+            btnSSalir.Location = new Point(194, 501);
+            btnSSalir.Margin = new Padding(3, 4, 3, 4);
             btnSSalir.Name = "btnSSalir";
-            btnSSalir.Size = new Size(117, 94);
+            btnSSalir.Size = new Size(102, 96);
             btnSSalir.TabIndex = 36;
             btnSSalir.Text = "SALIR";
             btnSSalir.TextAlign = ContentAlignment.BottomCenter;
             btnSSalir.UseVisualStyleBackColor = false;
             btnSSalir.Click += btnSSalir_Click;
             // 
-            // btnSiguiente
+            // btnBuscar
             // 
-            btnSiguiente.BackColor = Color.MediumSlateBlue;
-            btnSiguiente.Cursor = Cursors.Hand;
-            btnSiguiente.FlatAppearance.BorderSize = 0;
-            btnSiguiente.FlatStyle = FlatStyle.Flat;
-            btnSiguiente.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSiguiente.ForeColor = Color.Black;
-            btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
-            btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(12, 354);
-            btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(132, 94);
-            btnSiguiente.TabIndex = 37;
-            btnSiguiente.Text = "SIGUIENTE";
-            btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
-            btnSiguiente.UseVisualStyleBackColor = false;
-            btnSiguiente.Click += btnSiguiente_Click_1;
+            btnBuscar.BackColor = Color.SteelBlue;
+            btnBuscar.Cursor = Cursors.Hand;
+            btnBuscar.FlatAppearance.BorderSize = 0;
+            btnBuscar.FlatStyle = FlatStyle.Flat;
+            btnBuscar.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBuscar.ForeColor = Color.Gold;
+            btnBuscar.Image = (Image)resources.GetObject("btnBuscar.Image");
+            btnBuscar.ImageAlign = ContentAlignment.TopCenter;
+            btnBuscar.Location = new Point(12, 279);
+            btnBuscar.Margin = new Padding(3, 4, 3, 4);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new Size(108, 93);
+            btnBuscar.TabIndex = 37;
+            btnBuscar.Text = "BUSCAR";
+            btnBuscar.TextAlign = ContentAlignment.BottomCenter;
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnSiguiente_Click_1;
             // 
             // btnVerRutas
             // 
-            btnVerRutas.BackColor = Color.MediumSlateBlue;
+            btnVerRutas.BackColor = Color.SteelBlue;
             btnVerRutas.Cursor = Cursors.Hand;
             btnVerRutas.FlatAppearance.BorderSize = 0;
             btnVerRutas.FlatStyle = FlatStyle.Flat;
@@ -229,28 +230,58 @@
             btnVerRutas.ForeColor = Color.Gold;
             btnVerRutas.Image = (Image)resources.GetObject("btnVerRutas.Image");
             btnVerRutas.ImageAlign = ContentAlignment.MiddleRight;
-            btnVerRutas.Location = new Point(281, 360);
+            btnVerRutas.Location = new Point(322, 500);
+            btnVerRutas.Margin = new Padding(3, 4, 3, 4);
             btnVerRutas.Name = "btnVerRutas";
-            btnVerRutas.Size = new Size(164, 88);
+            btnVerRutas.Size = new Size(187, 97);
             btnVerRutas.TabIndex = 38;
             btnVerRutas.Text = "VER TODAS\r\nLAS RUTAS";
             btnVerRutas.TextAlign = ContentAlignment.MiddleLeft;
             btnVerRutas.UseVisualStyleBackColor = false;
             btnVerRutas.Click += btnVerRutas_Click;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(128, 378);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(39, 41);
+            pictureBox3.TabIndex = 47;
+            pictureBox3.TabStop = false;
+            // 
+            // textBoxResultado
+            // 
+            textBoxResultado.ForeColor = Color.Red;
+            textBoxResultado.Location = new Point(173, 364);
+            textBoxResultado.Multiline = true;
+            textBoxResultado.Name = "textBoxResultado";
+            textBoxResultado.Size = new Size(193, 66);
+            textBoxResultado.TabIndex = 46;
+            // 
+            // listBoxRutas
+            // 
+            listBoxRutas.FormattingEnabled = true;
+            listBoxRutas.Location = new Point(322, 274);
+            listBoxRutas.Name = "listBoxRutas";
+            listBoxRutas.Size = new Size(150, 84);
+            listBoxRutas.TabIndex = 48;
+            // 
             // Ventana2
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(807, 460);
+            ClientSize = new Size(922, 613);
+            Controls.Add(listBoxRutas);
+            Controls.Add(pictureBox3);
+            Controls.Add(textBoxResultado);
             Controls.Add(btnVerRutas);
-            Controls.Add(btnSiguiente);
+            Controls.Add(btnBuscar);
             Controls.Add(btnSSalir);
             Controls.Add(btnAtras);
-            Controls.Add(button2);
-            Controls.Add(comboBox3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(btnNoticias);
+            Controls.Add(comboBoxHora);
+            Controls.Add(comboBoxDestino);
+            Controls.Add(comboBoxUbicacion);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(lblBienvenida);
@@ -258,12 +289,12 @@
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Ventana2";
             Text = "Ventana2";
             Load += Ventana2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -277,13 +308,16 @@
         private Label lblBienvenida;
         private Label label4;
         private Label label5;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private ComboBox comboBox3;
-        private Button button2;
+        private ComboBox comboBoxUbicacion;
+        private ComboBox comboBoxDestino;
+        private ComboBox comboBoxHora;
+        private Button btnNoticias;
         private Botones btnAtras;
         private Botones btnSSalir;
-        private Botones btnSiguiente;
+        private Botones btnBuscar;
         private Botones btnVerRutas;
+        private PictureBox pictureBox3;
+        private TextBox textBoxResultado;
+        private ListBox listBoxRutas;
     }
 }

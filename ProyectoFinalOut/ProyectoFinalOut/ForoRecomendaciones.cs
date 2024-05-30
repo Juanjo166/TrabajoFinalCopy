@@ -15,12 +15,48 @@ namespace ProyectoFinalOut
         public frmForoRecomendaciones()
         {
             InitializeComponent();
-            InitializeComponent();
+            
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
 
             MaximizeBox = false; // Deshabilitar el botón de maximizar
             FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            // Asignar eventos para cada botón
+            
+
+            btnSalir.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSalir.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnCasa.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnCasa.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            
+
+
+        }
+
+
+
+        //Metodos para los botones dinamicos
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Aumentar el tamaño del botón
+                button.Size = new Size(button.Width + 10, button.Height + 10);
+            }
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Restaurar el tamaño del botón
+                button.Size = new Size(button.Width - 10, button.Height - 10);
+            }
         }
 
         private void ForoRecomendaciones_Load(object sender, EventArgs e)

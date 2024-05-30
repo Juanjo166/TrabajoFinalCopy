@@ -48,30 +48,29 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(105, 49);
+            lblBienvenida.Location = new Point(120, 65);
             lblBienvenida.Name = "lblBienvenida";
-            lblBienvenida.Size = new Size(249, 34);
+            lblBienvenida.Size = new Size(313, 42);
             lblBienvenida.TabIndex = 1;
             lblBienvenida.Text = " ¡Hola, elige el numero del autobus \r\ndel que quieres informarte!";
+            lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
             lblBienvenida.Click += label2_Click;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(522, 0);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(597, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(285, 466);
+            pictureBox1.Size = new Size(326, 621);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(248, 0);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(283, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(54, 46);
+            pictureBox2.Size = new Size(62, 61);
             pictureBox2.TabIndex = 16;
             pictureBox2.TabStop = false;
             // 
@@ -79,15 +78,15 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(122, 14);
+            label3.Location = new Point(139, 19);
             label3.Name = "label3";
-            label3.Size = new Size(115, 19);
+            label3.Size = new Size(139, 24);
             label3.TabIndex = 15;
             label3.Text = "TuTransporti";
             // 
             // btnRuta1
             // 
-            btnRuta1.BackColor = Color.MediumSlateBlue;
+            btnRuta1.BackColor = Color.SteelBlue;
             btnRuta1.Cursor = Cursors.Hand;
             btnRuta1.FlatAppearance.BorderSize = 0;
             btnRuta1.FlatStyle = FlatStyle.Flat;
@@ -95,9 +94,10 @@
             btnRuta1.ForeColor = Color.Gold;
             btnRuta1.Image = (Image)resources.GetObject("btnRuta1.Image");
             btnRuta1.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta1.Location = new Point(69, 104);
+            btnRuta1.Location = new Point(139, 139);
+            btnRuta1.Margin = new Padding(3, 4, 3, 4);
             btnRuta1.Name = "btnRuta1";
-            btnRuta1.Size = new Size(150, 83);
+            btnRuta1.Size = new Size(111, 98);
             btnRuta1.TabIndex = 18;
             btnRuta1.Text = "RUTA 1";
             btnRuta1.TextAlign = ContentAlignment.BottomCenter;
@@ -106,7 +106,7 @@
             // 
             // btnRuta6
             // 
-            btnRuta6.BackColor = Color.MediumSlateBlue;
+            btnRuta6.BackColor = Color.SteelBlue;
             btnRuta6.Cursor = Cursors.Hand;
             btnRuta6.FlatAppearance.BorderSize = 0;
             btnRuta6.FlatStyle = FlatStyle.Flat;
@@ -114,9 +114,10 @@
             btnRuta6.ForeColor = Color.Gold;
             btnRuta6.Image = (Image)resources.GetObject("btnRuta6.Image");
             btnRuta6.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta6.Location = new Point(248, 104);
+            btnRuta6.Location = new Point(283, 139);
+            btnRuta6.Margin = new Padding(3, 4, 3, 4);
             btnRuta6.Name = "btnRuta6";
-            btnRuta6.Size = new Size(150, 83);
+            btnRuta6.Size = new Size(101, 98);
             btnRuta6.TabIndex = 19;
             btnRuta6.Text = "RUTA 6";
             btnRuta6.TextAlign = ContentAlignment.BottomCenter;
@@ -125,7 +126,7 @@
             // 
             // btnRuta10
             // 
-            btnRuta10.BackColor = Color.MediumSlateBlue;
+            btnRuta10.BackColor = Color.SteelBlue;
             btnRuta10.Cursor = Cursors.Hand;
             btnRuta10.FlatAppearance.BorderSize = 0;
             btnRuta10.FlatStyle = FlatStyle.Flat;
@@ -133,9 +134,10 @@
             btnRuta10.ForeColor = Color.Gold;
             btnRuta10.Image = (Image)resources.GetObject("btnRuta10.Image");
             btnRuta10.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta10.Location = new Point(69, 210);
+            btnRuta10.Location = new Point(139, 280);
+            btnRuta10.Margin = new Padding(3, 4, 3, 4);
             btnRuta10.Name = "btnRuta10";
-            btnRuta10.Size = new Size(150, 83);
+            btnRuta10.Size = new Size(111, 98);
             btnRuta10.TabIndex = 20;
             btnRuta10.Text = "RUTA 10";
             btnRuta10.TextAlign = ContentAlignment.BottomCenter;
@@ -144,7 +146,7 @@
             // 
             // btnRuta7
             // 
-            btnRuta7.BackColor = Color.MediumSlateBlue;
+            btnRuta7.BackColor = Color.SteelBlue;
             btnRuta7.Cursor = Cursors.Hand;
             btnRuta7.FlatAppearance.BorderSize = 0;
             btnRuta7.FlatStyle = FlatStyle.Flat;
@@ -152,9 +154,10 @@
             btnRuta7.ForeColor = Color.Gold;
             btnRuta7.Image = (Image)resources.GetObject("btnRuta7.Image");
             btnRuta7.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta7.Location = new Point(248, 210);
+            btnRuta7.Location = new Point(283, 280);
+            btnRuta7.Margin = new Padding(3, 4, 3, 4);
             btnRuta7.Name = "btnRuta7";
-            btnRuta7.Size = new Size(150, 83);
+            btnRuta7.Size = new Size(101, 98);
             btnRuta7.TabIndex = 21;
             btnRuta7.Text = "RUTA 7";
             btnRuta7.TextAlign = ContentAlignment.BottomCenter;
@@ -163,7 +166,7 @@
             // 
             // btnCasa
             // 
-            btnCasa.BackColor = Color.MediumSlateBlue;
+            btnCasa.BackColor = Color.SteelBlue;
             btnCasa.Cursor = Cursors.Hand;
             btnCasa.FlatAppearance.BorderSize = 0;
             btnCasa.FlatStyle = FlatStyle.Flat;
@@ -171,9 +174,10 @@
             btnCasa.ForeColor = Color.Black;
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(12, 331);
+            btnCasa.Location = new Point(79, 441);
+            btnCasa.Margin = new Padding(3, 4, 3, 4);
             btnCasa.Name = "btnCasa";
-            btnCasa.Size = new Size(150, 94);
+            btnCasa.Size = new Size(106, 100);
             btnCasa.TabIndex = 22;
             btnCasa.Text = "CASA";
             btnCasa.TextAlign = ContentAlignment.BottomCenter;
@@ -182,7 +186,7 @@
             // 
             // btnSiguiente
             // 
-            btnSiguiente.BackColor = Color.MediumSlateBlue;
+            btnSiguiente.BackColor = Color.SteelBlue;
             btnSiguiente.Cursor = Cursors.Hand;
             btnSiguiente.FlatAppearance.BorderSize = 0;
             btnSiguiente.FlatStyle = FlatStyle.Flat;
@@ -190,9 +194,10 @@
             btnSiguiente.ForeColor = Color.Black;
             btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
             btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(186, 331);
+            btnSiguiente.Location = new Point(223, 441);
+            btnSiguiente.Margin = new Padding(3, 4, 3, 4);
             btnSiguiente.Name = "btnSiguiente";
-            btnSiguiente.Size = new Size(150, 94);
+            btnSiguiente.Size = new Size(122, 100);
             btnSiguiente.TabIndex = 23;
             btnSiguiente.Text = "SIGUIENTE";
             btnSiguiente.TextAlign = ContentAlignment.BottomCenter;
@@ -201,7 +206,7 @@
             // 
             // btnSSalir
             // 
-            btnSSalir.BackColor = Color.MediumSlateBlue;
+            btnSSalir.BackColor = Color.SteelBlue;
             btnSSalir.Cursor = Cursors.Hand;
             btnSSalir.FlatAppearance.BorderSize = 0;
             btnSSalir.FlatStyle = FlatStyle.Flat;
@@ -209,9 +214,10 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(356, 331);
+            btnSSalir.Location = new Point(381, 441);
+            btnSSalir.Margin = new Padding(3, 4, 3, 4);
             btnSSalir.Name = "btnSSalir";
-            btnSSalir.Size = new Size(150, 94);
+            btnSSalir.Size = new Size(108, 100);
             btnSSalir.TabIndex = 24;
             btnSSalir.Text = "SALIR";
             btnSSalir.TextAlign = ContentAlignment.BottomCenter;
@@ -220,9 +226,9 @@
             // 
             // frmTutransporti
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(807, 460);
+            ClientSize = new Size(922, 613);
             Controls.Add(btnSSalir);
             Controls.Add(btnSiguiente);
             Controls.Add(btnCasa);
@@ -234,7 +240,6 @@
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(lblBienvenida);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmTutransporti";
             Text = "TuTransporti";
             Load += frmTutransporti_Load;

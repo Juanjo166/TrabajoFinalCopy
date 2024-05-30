@@ -19,7 +19,54 @@ namespace ProyectoFinalOut
             StartPosition = FormStartPosition.CenterScreen;
             MaximizeBox = false; // Deshabilitar el botón de maximizar
             FormBorderStyle = FormBorderStyle.FixedSingle; // Establecer el borde del formulario a un tamaño fijo
+
+            // Asignar eventos para cada botón
+            btnCasa.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnCasa.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnSiguiente.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSiguiente.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnSSalir.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSSalir.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta1.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta1.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta6.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta6.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta10.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta10.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta7.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta7.MouseLeave += new EventHandler(Button_MouseLeave);
+
         }
+
+
+        //Metodos de botones dinamicos
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Aumentar el tamaño del botón
+                button.Size = new Size(button.Width + 10, button.Height + 10);
+            }
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Restaurar el tamaño del botón
+                button.Size = new Size(button.Width - 10, button.Height - 10);
+            }
+        }
+
+
 
         private void label2_Click(object sender, EventArgs e)
         {

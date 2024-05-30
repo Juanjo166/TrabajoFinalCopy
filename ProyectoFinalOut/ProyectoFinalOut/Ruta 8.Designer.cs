@@ -57,49 +57,45 @@
             // button1
             // 
             button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(626, 341);
-            button1.Margin = new Padding(3, 2, 3, 2);
+            button1.Location = new Point(715, 455);
             button1.Name = "button1";
-            button1.Size = new Size(74, 20);
+            button1.Size = new Size(85, 27);
             button1.TabIndex = 59;
             button1.Text = "Enviar";
             button1.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(556, 274);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
+            textBox1.Location = new Point(635, 365);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(220, 63);
+            textBox1.Size = new Size(251, 83);
             textBox1.TabIndex = 57;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(557, 245);
+            label5.Location = new Point(637, 327);
             label5.Name = "label5";
-            label5.Size = new Size(189, 19);
+            label5.Size = new Size(222, 23);
             label5.TabIndex = 58;
             label5.Text = "Recomendaciones y quejas";
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(541, 236);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Location = new Point(618, 315);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(250, 134);
+            pictureBox6.Size = new Size(286, 179);
             pictureBox6.TabIndex = 60;
             pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(2, 19);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Location = new Point(2, 25);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(52, 50);
+            pictureBox5.Size = new Size(59, 67);
             pictureBox5.TabIndex = 55;
             pictureBox5.TabStop = false;
             // 
@@ -107,9 +103,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(60, 32);
+            label4.Location = new Point(69, 43);
             label4.Name = "label4";
-            label4.Size = new Size(60, 17);
+            label4.Size = new Size(73, 21);
             label4.TabIndex = 54;
             label4.Text = "RUTA 8";
             // 
@@ -117,9 +113,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(328, 216);
+            label3.Location = new Point(375, 288);
             label3.Name = "label3";
-            label3.Size = new Size(54, 17);
+            label3.Size = new Size(68, 21);
             label3.TabIndex = 53;
             label3.Text = "Tarifas";
             // 
@@ -127,9 +123,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(83, 216);
+            label2.Location = new Point(95, 288);
             label2.Name = "label2";
-            label2.Size = new Size(130, 17);
+            label2.Size = new Size(161, 21);
             label2.TabIndex = 52;
             label2.Text = "Color del autobus";
             // 
@@ -137,49 +133,45 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(91, 49);
+            label1.Location = new Point(104, 65);
             label1.Name = "label1";
-            label1.Size = new Size(330, 17);
+            label1.Size = new Size(409, 21);
             label1.TabIndex = 51;
             label1.Text = "A continuación mostraremos todo su recorrido";
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(284, 240);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
+            pictureBox4.Location = new Point(325, 320);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(164, 78);
+            pictureBox4.Size = new Size(187, 104);
             pictureBox4.TabIndex = 50;
             pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(71, 234);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
+            pictureBox3.Location = new Point(81, 312);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(175, 124);
+            pictureBox3.Size = new Size(200, 165);
             pictureBox3.TabIndex = 49;
             pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(60, 67);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
+            pictureBox2.Location = new Point(69, 89);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(421, 148);
+            pictureBox2.Size = new Size(481, 197);
             pictureBox2.TabIndex = 48;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(510, 19);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(583, 25);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(304, 460);
+            pictureBox1.Size = new Size(347, 613);
             pictureBox1.TabIndex = 47;
             pictureBox1.TabStop = false;
             // 
@@ -190,10 +182,9 @@
             btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
             btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
-            btnRecomendaciones.Location = new Point(530, 379);
-            btnRecomendaciones.Margin = new Padding(3, 2, 3, 2);
+            btnRecomendaciones.Location = new Point(606, 505);
             btnRecomendaciones.Name = "btnRecomendaciones";
-            btnRecomendaciones.Size = new Size(261, 44);
+            btnRecomendaciones.Size = new Size(298, 59);
             btnRecomendaciones.TabIndex = 78;
             btnRecomendaciones.Text = "VER FORO DE RECOMENDACIONES \r\nY QUEJAS";
             btnRecomendaciones.TextAlign = ContentAlignment.MiddleLeft;
@@ -202,7 +193,7 @@
             // 
             // btnCasa
             // 
-            btnCasa.BackColor = Color.MediumSlateBlue;
+            btnCasa.BackColor = Color.SteelBlue;
             btnCasa.Cursor = Cursors.Hand;
             btnCasa.FlatAppearance.BorderSize = 0;
             btnCasa.FlatStyle = FlatStyle.Flat;
@@ -210,9 +201,10 @@
             btnCasa.ForeColor = Color.Black;
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(2, 363);
+            btnCasa.Location = new Point(81, 501);
+            btnCasa.Margin = new Padding(3, 4, 3, 4);
             btnCasa.Name = "btnCasa";
-            btnCasa.Size = new Size(150, 94);
+            btnCasa.Size = new Size(92, 99);
             btnCasa.TabIndex = 79;
             btnCasa.Text = "CASA";
             btnCasa.TextAlign = ContentAlignment.BottomCenter;
@@ -221,7 +213,7 @@
             // 
             // btnSSalir
             // 
-            btnSSalir.BackColor = Color.MediumSlateBlue;
+            btnSSalir.BackColor = Color.SteelBlue;
             btnSSalir.Cursor = Cursors.Hand;
             btnSSalir.FlatAppearance.BorderSize = 0;
             btnSSalir.FlatStyle = FlatStyle.Flat;
@@ -229,9 +221,10 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(354, 363);
+            btnSSalir.Location = new Point(343, 501);
+            btnSSalir.Margin = new Padding(3, 4, 3, 4);
             btnSSalir.Name = "btnSSalir";
-            btnSSalir.Size = new Size(150, 94);
+            btnSSalir.Size = new Size(100, 99);
             btnSSalir.TabIndex = 80;
             btnSSalir.Text = "SALIR";
             btnSSalir.TextAlign = ContentAlignment.BottomCenter;
@@ -240,7 +233,7 @@
             // 
             // btnAtras
             // 
-            btnAtras.BackColor = Color.MediumSlateBlue;
+            btnAtras.BackColor = Color.SteelBlue;
             btnAtras.Cursor = Cursors.Hand;
             btnAtras.FlatAppearance.BorderSize = 0;
             btnAtras.FlatStyle = FlatStyle.Flat;
@@ -248,9 +241,10 @@
             btnAtras.ForeColor = Color.Black;
             btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
             btnAtras.ImageAlign = ContentAlignment.TopCenter;
-            btnAtras.Location = new Point(176, 363);
+            btnAtras.Location = new Point(216, 501);
+            btnAtras.Margin = new Padding(3, 4, 3, 4);
             btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(150, 94);
+            btnAtras.Size = new Size(95, 99);
             btnAtras.TabIndex = 81;
             btnAtras.Text = "ATRAS";
             btnAtras.TextAlign = ContentAlignment.BottomCenter;
@@ -259,9 +253,9 @@
             // 
             // frmRuta8
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(807, 460);
+            ClientSize = new Size(922, 613);
             Controls.Add(btnAtras);
             Controls.Add(btnSSalir);
             Controls.Add(btnCasa);
@@ -279,7 +273,6 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "frmRuta8";
             Text = "Ruta_8";
             Load += frmRuta8_Load;

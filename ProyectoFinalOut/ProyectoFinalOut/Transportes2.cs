@@ -19,7 +19,55 @@ namespace ProyectoFinalOut
             StartPosition = FormStartPosition.CenterScreen;
             MaximizeBox = false; // Deshabilitar el botón de maximizar
             FormBorderStyle = FormBorderStyle.FixedSingle; // Establecer el borde del formulario a un tamaño fijo
+
+            // Asignar eventos para cada botón
+            btnCasa.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnCasa.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnSiguiente.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSiguiente.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnSSalir.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSSalir.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta8.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta8.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta14.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta14.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta21.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta21.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnRuta3.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnRuta3.MouseLeave += new EventHandler(Button_MouseLeave);
+
+
         }
+
+
+        //Metodos de botones dinamicos
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Aumentar el tamaño del botón
+                button.Size = new Size(button.Width + 10, button.Height + 10);
+            }
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Restaurar el tamaño del botón
+                button.Size = new Size(button.Width - 10, button.Height - 10);
+            }
+        }
+
+
 
         private void Transportes2_Load(object sender, EventArgs e)
         {

@@ -12,14 +12,87 @@ namespace ProyectoFinalOut
 {
     public partial class Ventana2 : Form
     {
+        // Lista de rutas predefinidas
+        private Dictionary<string, List<string>> rutas;
         public Ventana2()
         {
             InitializeComponent();
+            //Datos
+            InicializarDatos();
+            //Ventana
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
 
             MaximizeBox = false; // Deshabilitar el botón de maximizar
             FormBorderStyle = FormBorderStyle.FixedSingle;
+
+            // Asignar eventos para cada botón
+            btnAtras.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnAtras.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnBuscar.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnBuscar.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnSSalir.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSSalir.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnVerRutas.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnVerRutas.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            btnNoticias.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnNoticias.MouseLeave += new EventHandler(Button_MouseLeave);
+
+            // Llenar el ComboBox con las horas del día
+            for (int i = 0; i < 24; i++)
+            {
+                comboBoxHora.Items.Add(i.ToString("D2") + ":00");
+            }
+
+        }
+
+        //Metodos de botones de animacion
+        private void Button_MouseEnter(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Aumentar el tamaño del botón
+                button.Size = new Size(button.Width + 10, button.Height + 10);
+            }
+        }
+
+        private void Button_MouseLeave(object sender, EventArgs e)
+        {
+            Button button = sender as Button;
+            if (button != null)
+            {
+                // Restaurar el tamaño del botón
+                button.Size = new Size(button.Width - 10, button.Height - 10);
+            }
+        }
+
+        //Metodo de rutas
+        private void InicializarDatos()
+        {
+            // Llenar los ComboBox con ubicaciones y destinos
+            comboBoxUbicacion.Items.AddRange(new string[] { "Carmen alto", "Puente nuevo", "Alameda", "Jr. Lima" });
+            comboBoxDestino.Items.AddRange(new string[] { "Carmen alto", "Puente nuevo", "Alameda", "Jr. Lima" });
+
+            // Inicializar rutas
+            rutas = new Dictionary<string, List<string>>()
+            {
+                { "Carmen alto-Puente nuevo", new List<string>{ "Ruta 1", "Ruta 2" } },
+                { "Alameda-Jr. Lima", new List<string>{ "Ruta 3" } },
+                { "Puente nuevo-Alameda", new List<string>{ "Ruta 4", "Ruta 5" } },
+                // Agregar más rutas según sea necesario
+            };
+        }
+
+        // Función para determinar si es hora de congestión
+        private bool EsHoraDeCongestion(int hora)
+        {
+            // Definir horas de alta congestión (por ejemplo, de 7 a 9 AM y de 5 a 7 PM)
+            return (hora >= 7 && hora <= 8) || (hora >= 13 && hora <= 14) || (hora >= 18 && hora <= 20);
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -48,9 +121,47 @@ namespace ProyectoFinalOut
 
         private void btnSiguiente_Click_1(object sender, EventArgs e)
         {
-            frmVentana3Respuesta vtr3 = new frmVentana3Respuesta();
-            this.Hide();
-            vtr3.ShowDialog(); //Muestro formulario
+            string ubicacion = comboBoxUbicacion.SelectedItem?.ToString();
+            string destino = comboBoxDestino.SelectedItem?.ToString();
+
+            if (ubicacion == null || destino == null)
+            {
+                MessageBox.Show("Por favor seleccione una ubicación y un destino.");
+                return;
+            }
+
+            string claveRuta = $"{ubicacion}-{destino}";
+            if (rutas.ContainsKey(claveRuta))
+            {
+                listBoxRutas.Items.Clear();
+                listBoxRutas.Items.AddRange(rutas[claveRuta].ToArray());
+            }
+            else
+            {
+                listBoxRutas.Items.Clear();
+                listBoxRutas.Items.Add("No hay rutas disponibles para la selección dada.");
+            }
+
+
+            // Obtener la hora seleccionada
+            string horaSeleccionada = comboBoxHora.SelectedItem?.ToString();
+
+            if (string.IsNullOrEmpty(horaSeleccionada))
+            {
+                MessageBox.Show("Por favor, selecciona una hora.");
+                return;
+            }
+
+            // Convertir la hora seleccionada a un entero
+            int hora = int.Parse(horaSeleccionada.Split(':')[0]);
+
+            // Determinar si es una hora de congestión vehicular
+            string resultado = EsHoraDeCongestion(hora) ? "Hora de alta congestión vehicular, tome sus precauciones" : "Hora de baja congestión vehicular";
+
+            // Mostrar el resultado en el TextBox
+            textBoxResultado.Text = resultado;
+
+
         }
 
         private void btnSSalir_Click(object sender, EventArgs e)
