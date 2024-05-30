@@ -14,7 +14,7 @@ namespace ProyectoFinalOut
 
 
             // Asignar eventos para cada botón
-            
+
             btnSiguiente.MouseEnter += new EventHandler(Button_MouseEnter);
             btnSiguiente.MouseLeave += new EventHandler(Button_MouseLeave);
 
@@ -86,6 +86,11 @@ namespace ProyectoFinalOut
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
         {
 
         }

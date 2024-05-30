@@ -175,5 +175,10 @@ namespace ProyectoFinalOut
             this.Hide();
             tp.ShowDialog(); //Muestro formulario
         }
+
+        private void lblBienvenida_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

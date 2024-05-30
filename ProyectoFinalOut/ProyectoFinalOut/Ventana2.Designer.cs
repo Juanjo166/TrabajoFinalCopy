@@ -100,6 +100,7 @@
             lblBienvenida.TabIndex = 23;
             lblBienvenida.Text = "¡Bienvenido! \r\nEstamos para ayudarlo en su recorrido.";
             lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
+            lblBienvenida.Click += lblBienvenida_Click;
             // 
             // label4
             // 
