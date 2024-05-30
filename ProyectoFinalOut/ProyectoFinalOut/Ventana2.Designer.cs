@@ -32,7 +32,6 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             label2 = new Label();
-            label1 = new Label();
             lblBienvenida = new Label();
             label4 = new Label();
             label5 = new Label();
@@ -47,9 +46,11 @@
             pictureBox3 = new PictureBox();
             textBoxResultado = new TextBox();
             listBoxRutas = new ListBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -57,18 +58,20 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(-3, -3);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(64, 64);
+            pictureBox2.Size = new Size(98, 91);
             pictureBox2.TabIndex = 22;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
+            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(515, -3);
+            pictureBox1.Location = new Point(-3, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(406, 616);
+            pictureBox1.Size = new Size(923, 615);
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // label2
             // 
@@ -80,21 +83,11 @@
             label2.TabIndex = 17;
             label2.Text = "Ingresa su ubicación:";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(56, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(114, 24);
-            label1.TabIndex = 16;
-            label1.Text = "Transporti";
-            // 
             // lblBienvenida
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(103, 52);
+            lblBienvenida.Location = new Point(128, 51);
             lblBienvenida.Name = "lblBienvenida";
             lblBienvenida.Size = new Size(321, 46);
             lblBienvenida.TabIndex = 23;
@@ -152,7 +145,7 @@
             btnNoticias.Font = new Font("Tahoma", 9F, FontStyle.Bold, GraphicsUnit.Point, 178);
             btnNoticias.Image = (Image)resources.GetObject("btnNoticias.Image");
             btnNoticias.ImageAlign = ContentAlignment.MiddleRight;
-            btnNoticias.Location = new Point(127, 436);
+            btnNoticias.Location = new Point(515, 85);
             btnNoticias.Name = "btnNoticias";
             btnNoticias.Size = new Size(283, 48);
             btnNoticias.TabIndex = 33;
@@ -171,7 +164,7 @@
             btnAtras.ForeColor = Color.Black;
             btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
             btnAtras.ImageAlign = ContentAlignment.TopCenter;
-            btnAtras.Location = new Point(55, 500);
+            btnAtras.Location = new Point(669, 503);
             btnAtras.Margin = new Padding(3, 4, 3, 4);
             btnAtras.Name = "btnAtras";
             btnAtras.Size = new Size(97, 97);
@@ -191,7 +184,7 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(194, 501);
+            btnSSalir.Location = new Point(808, 504);
             btnSSalir.Margin = new Padding(3, 4, 3, 4);
             btnSSalir.Name = "btnSSalir";
             btnSSalir.Size = new Size(102, 96);
@@ -211,7 +204,7 @@
             btnBuscar.ForeColor = Color.Gold;
             btnBuscar.Image = (Image)resources.GetObject("btnBuscar.Image");
             btnBuscar.ImageAlign = ContentAlignment.TopCenter;
-            btnBuscar.Location = new Point(12, 279);
+            btnBuscar.Location = new Point(389, 378);
             btnBuscar.Margin = new Padding(3, 4, 3, 4);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new Size(108, 93);
@@ -231,7 +224,7 @@
             btnVerRutas.ForeColor = Color.Gold;
             btnVerRutas.Image = (Image)resources.GetObject("btnVerRutas.Image");
             btnVerRutas.ImageAlign = ContentAlignment.MiddleRight;
-            btnVerRutas.Location = new Point(322, 500);
+            btnVerRutas.Location = new Point(531, 158);
             btnVerRutas.Margin = new Padding(3, 4, 3, 4);
             btnVerRutas.Name = "btnVerRutas";
             btnVerRutas.Size = new Size(187, 97);
@@ -267,6 +260,14 @@
             listBoxRutas.Size = new Size(150, 84);
             listBoxRutas.TabIndex = 48;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(93, 35);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(404, 403);
+            pictureBox4.TabIndex = 49;
+            pictureBox4.TabStop = false;
+            // 
             // Ventana2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -287,15 +288,16 @@
             Controls.Add(label4);
             Controls.Add(lblBienvenida);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(pictureBox4);
+            Controls.Add(pictureBox1);
             Name = "Ventana2";
             Text = "Ventana2";
             Load += Ventana2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -305,7 +307,6 @@
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Label label2;
-        private Label label1;
         private Label lblBienvenida;
         private Label label4;
         private Label label5;
@@ -320,5 +321,6 @@
         private PictureBox pictureBox3;
         private TextBox textBoxResultado;
         private ListBox listBoxRutas;
+        private PictureBox pictureBox4;
     }
 }

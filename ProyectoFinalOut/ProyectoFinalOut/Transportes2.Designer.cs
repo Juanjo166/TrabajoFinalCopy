@@ -47,9 +47,9 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(250, -5);
+            pictureBox2.Location = new Point(3, 9);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(62, 61);
+            pictureBox2.Size = new Size(62, 67);
             pictureBox2.TabIndex = 27;
             pictureBox2.TabStop = false;
             // 
@@ -57,18 +57,18 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(105, 13);
+            label3.Location = new Point(71, 26);
             label3.Name = "label3";
-            label3.Size = new Size(139, 24);
+            label3.Size = new Size(114, 24);
             label3.TabIndex = 26;
-            label3.Text = "TuTransporti";
+            label3.Text = "Transporti";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(562, -5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(326, 621);
+            pictureBox1.Size = new Size(354, 621);
             pictureBox1.TabIndex = 22;
             pictureBox1.TabStop = false;
             // 

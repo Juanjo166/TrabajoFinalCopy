@@ -48,7 +48,7 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(120, 65);
+            lblBienvenida.Location = new Point(121, 75);
             lblBienvenida.Name = "lblBienvenida";
             lblBienvenida.Size = new Size(313, 42);
             lblBienvenida.TabIndex = 1;
@@ -59,9 +59,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(597, 0);
+            pictureBox1.Location = new Point(543, 0);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(326, 621);
+            pictureBox1.Size = new Size(380, 621);
             pictureBox1.TabIndex = 11;
             pictureBox1.TabStop = false;
             // 
@@ -70,7 +70,7 @@
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(283, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(62, 61);
+            pictureBox2.Size = new Size(62, 72);
             pictureBox2.TabIndex = 16;
             pictureBox2.TabStop = false;
             // 
@@ -78,11 +78,11 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(139, 19);
+            label3.Location = new Point(163, 20);
             label3.Name = "label3";
-            label3.Size = new Size(139, 24);
+            label3.Size = new Size(114, 24);
             label3.TabIndex = 15;
-            label3.Text = "TuTransporti";
+            label3.Text = "Transporti";
             // 
             // btnRuta1
             // 
