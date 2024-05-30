@@ -18,8 +18,8 @@ namespace ProyectoFinalOut
             btnSiguiente.MouseEnter += new EventHandler(Button_MouseEnter);
             btnSiguiente.MouseLeave += new EventHandler(Button_MouseLeave);
 
-            btnSalir.MouseEnter += new EventHandler(Button_MouseEnter);
-            btnSalir.MouseLeave += new EventHandler(Button_MouseLeave);
+            btnSSalir.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnSSalir.MouseLeave += new EventHandler(Button_MouseLeave);
 
             btnNoticias.MouseEnter += new EventHandler(Button_MouseEnter);
             btnNoticias.MouseLeave += new EventHandler(Button_MouseLeave);
@@ -46,22 +46,6 @@ namespace ProyectoFinalOut
                 // Restaurar el tamaño del botón
                 button.Size = new Size(button.Width - 10, button.Height - 10);
             }
-        }
-
-
-
-
-        private void btnSiguiente_Click(object sender, EventArgs e)
-        {
-            Ventana2 Vt2 = new Ventana2();
-            this.Hide();
-            Vt2.ShowDialog(); //Muestro formulario
-
-        }
-
-        private void btnSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void frmTransporti_Load(object sender, EventArgs e)
@@ -93,6 +77,19 @@ namespace ProyectoFinalOut
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSiguiente_Click_1(object sender, EventArgs e)
+        {
+            Usuario.Nombre = txtNombre.Text;
+            Ventana2 Vt2 = new Ventana2();
+            this.Hide();
+            Vt2.ShowDialog(); //Muestro formulario
+        }
+
+        private void btnSSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
