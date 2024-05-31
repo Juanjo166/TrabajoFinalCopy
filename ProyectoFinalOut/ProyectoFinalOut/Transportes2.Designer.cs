@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transportes2));
             pictureBox2 = new PictureBox();
             label3 = new Label();
-            pictureBox1 = new PictureBox();
             lblBienvenida = new Label();
             btnRuta8 = new Botones();
             btnRuta14 = new Botones();
@@ -40,6 +39,7 @@
             btnCasa = new Botones();
             btnSiguiente = new Botones();
             btnSSalir = new Botones();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -62,15 +62,6 @@
             label3.Size = new Size(114, 24);
             label3.TabIndex = 26;
             label3.Text = "Transporti";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(562, -5);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(354, 621);
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
             // 
             // lblBienvenida
             // 
@@ -221,11 +212,21 @@
             btnSSalir.UseVisualStyleBackColor = false;
             btnSSalir.Click += btnSSalir_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(483, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(443, 611);
+            pictureBox1.TabIndex = 36;
+            pictureBox1.TabStop = false;
+            // 
             // Transportes2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
+            Controls.Add(pictureBox1);
             Controls.Add(btnSSalir);
             Controls.Add(btnSiguiente);
             Controls.Add(btnCasa);
@@ -235,7 +236,6 @@
             Controls.Add(btnRuta8);
             Controls.Add(pictureBox2);
             Controls.Add(label3);
-            Controls.Add(pictureBox1);
             Controls.Add(lblBienvenida);
             Name = "Transportes2";
             Text = "Transportes2";
@@ -249,7 +249,6 @@
         #endregion
         private PictureBox pictureBox2;
         private Label label3;
-        private PictureBox pictureBox1;
         private Label lblBienvenida;
         private Botones btnRuta8;
         private Botones btnRuta14;
@@ -258,5 +257,6 @@
         private Botones btnCasa;
         private Botones btnSiguiente;
         private Botones btnSSalir;
+        private PictureBox pictureBox1;
     }
 }
