@@ -79,9 +79,9 @@
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(516, 0);
+            pictureBox1.Location = new Point(476, -3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(408, 615);
+            pictureBox1.Size = new Size(623, 619);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 13;
             pictureBox1.TabStop = false;

@@ -67,11 +67,12 @@
             // 
             lblBienvenida.AutoSize = true;
             lblBienvenida.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblBienvenida.Location = new Point(86, 60);
+            lblBienvenida.Location = new Point(101, 74);
             lblBienvenida.Name = "lblBienvenida";
             lblBienvenida.Size = new Size(313, 42);
             lblBienvenida.TabIndex = 18;
             lblBienvenida.Text = " ¡Hola, elige el numero del autobus \r\ndel que quieres informarte!";
+            lblBienvenida.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnRuta8
             // 
@@ -83,7 +84,7 @@
             btnRuta8.ForeColor = Color.Gold;
             btnRuta8.Image = (Image)resources.GetObject("btnRuta8.Image");
             btnRuta8.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta8.Location = new Point(105, 123);
+            btnRuta8.Location = new Point(113, 137);
             btnRuta8.Margin = new Padding(3, 4, 3, 4);
             btnRuta8.Name = "btnRuta8";
             btnRuta8.Size = new Size(109, 94);
@@ -103,7 +104,7 @@
             btnRuta14.ForeColor = Color.Gold;
             btnRuta14.Image = (Image)resources.GetObject("btnRuta14.Image");
             btnRuta14.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta14.Location = new Point(250, 123);
+            btnRuta14.Location = new Point(258, 137);
             btnRuta14.Margin = new Padding(3, 4, 3, 4);
             btnRuta14.Name = "btnRuta14";
             btnRuta14.Size = new Size(109, 94);
@@ -123,7 +124,7 @@
             btnRuta21.ForeColor = Color.Gold;
             btnRuta21.Image = (Image)resources.GetObject("btnRuta21.Image");
             btnRuta21.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta21.Location = new Point(105, 273);
+            btnRuta21.Location = new Point(113, 287);
             btnRuta21.Margin = new Padding(3, 4, 3, 4);
             btnRuta21.Name = "btnRuta21";
             btnRuta21.Size = new Size(109, 97);
@@ -143,7 +144,7 @@
             btnRuta3.ForeColor = Color.Gold;
             btnRuta3.Image = (Image)resources.GetObject("btnRuta3.Image");
             btnRuta3.ImageAlign = ContentAlignment.TopCenter;
-            btnRuta3.Location = new Point(250, 273);
+            btnRuta3.Location = new Point(258, 287);
             btnRuta3.Margin = new Padding(3, 4, 3, 4);
             btnRuta3.Name = "btnRuta3";
             btnRuta3.Size = new Size(109, 97);
@@ -162,7 +163,7 @@
             btnCasa.ForeColor = Color.Black;
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(80, 452);
+            btnCasa.Location = new Point(49, 452);
             btnCasa.Margin = new Padding(3, 4, 3, 4);
             btnCasa.Name = "btnCasa";
             btnCasa.Size = new Size(105, 100);
@@ -182,7 +183,7 @@
             btnSiguiente.ForeColor = Color.Black;
             btnSiguiente.Image = (Image)resources.GetObject("btnSiguiente.Image");
             btnSiguiente.ImageAlign = ContentAlignment.TopCenter;
-            btnSiguiente.Location = new Point(227, 452);
+            btnSiguiente.Location = new Point(196, 452);
             btnSiguiente.Margin = new Padding(3, 4, 3, 4);
             btnSiguiente.Name = "btnSiguiente";
             btnSiguiente.Size = new Size(102, 100);
@@ -202,7 +203,7 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(369, 452);
+            btnSSalir.Location = new Point(338, 452);
             btnSSalir.Margin = new Padding(3, 4, 3, 4);
             btnSSalir.Name = "btnSSalir";
             btnSSalir.Size = new Size(101, 100);
@@ -215,9 +216,10 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(483, 0);
+            pictureBox1.Location = new Point(473, -1);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(443, 611);
+            pictureBox1.Size = new Size(892, 611);
+            pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 36;
             pictureBox1.TabStop = false;
             // 
