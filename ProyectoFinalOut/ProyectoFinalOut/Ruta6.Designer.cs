@@ -38,9 +38,9 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            textBox1 = new TextBox();
+            txtRecomendaciones = new TextBox();
             label5 = new Label();
-            button1 = new Button();
+            btnEnviar = new Button();
             label6 = new Label();
             pictureBox6 = new PictureBox();
             btnRecomendaciones = new Button();
@@ -59,8 +59,9 @@
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(-3, 0);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(59, 67);
+            pictureBox5.Size = new Size(52, 50);
             pictureBox5.TabIndex = 34;
             pictureBox5.TabStop = false;
             // 
@@ -68,9 +69,9 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(63, 19);
+            label4.Location = new Point(55, 14);
             label4.Name = "label4";
-            label4.Size = new Size(73, 21);
+            label4.Size = new Size(60, 17);
             label4.TabIndex = 33;
             label4.Text = "RUTA 6";
             label4.Click += label4_Click;
@@ -79,9 +80,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(370, 285);
+            label3.Location = new Point(324, 214);
             label3.Name = "label3";
-            label3.Size = new Size(68, 21);
+            label3.Size = new Size(54, 17);
             label3.TabIndex = 32;
             label3.Text = "Tarifas";
             // 
@@ -89,9 +90,9 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(90, 285);
+            label2.Location = new Point(79, 214);
             label2.Name = "label2";
-            label2.Size = new Size(161, 21);
+            label2.Size = new Size(130, 17);
             label2.TabIndex = 31;
             label2.Text = "Color del autobus";
             // 
@@ -99,89 +100,97 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(99, 61);
+            label1.Location = new Point(87, 46);
             label1.Name = "label1";
-            label1.Size = new Size(409, 21);
+            label1.Size = new Size(330, 17);
             label1.TabIndex = 30;
             label1.Text = "A continuación mostraremos todo su recorrido";
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(320, 317);
+            pictureBox4.Location = new Point(280, 238);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(181, 113);
+            pictureBox4.Size = new Size(158, 85);
             pictureBox4.TabIndex = 29;
             pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(99, 317);
+            pictureBox3.Location = new Point(87, 238);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 116);
+            pictureBox3.Size = new Size(109, 87);
             pictureBox3.TabIndex = 28;
             pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(99, 85);
+            pictureBox2.Location = new Point(87, 64);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(418, 171);
+            pictureBox2.Size = new Size(366, 128);
             pictureBox2.TabIndex = 27;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(575, 0);
+            pictureBox1.Location = new Point(503, 0);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(347, 613);
+            pictureBox1.Size = new Size(304, 460);
             pictureBox1.TabIndex = 26;
             pictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txtRecomendaciones
             // 
-            textBox1.Location = new Point(625, 371);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(251, 83);
-            textBox1.TabIndex = 36;
+            txtRecomendaciones.Location = new Point(547, 278);
+            txtRecomendaciones.Margin = new Padding(3, 2, 3, 2);
+            txtRecomendaciones.Multiline = true;
+            txtRecomendaciones.Name = "txtRecomendaciones";
+            txtRecomendaciones.Size = new Size(220, 63);
+            txtRecomendaciones.TabIndex = 36;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(627, 331);
+            label5.Location = new Point(549, 248);
             label5.Name = "label5";
-            label5.Size = new Size(222, 23);
+            label5.Size = new Size(189, 19);
             label5.TabIndex = 37;
             label5.Text = "Recomendaciones y quejas";
             // 
-            // button1
+            // btnEnviar
             // 
-            button1.Cursor = Cursors.Hand;
-            button1.Location = new Point(705, 459);
-            button1.Name = "button1";
-            button1.Size = new Size(85, 27);
-            button1.TabIndex = 38;
-            button1.Text = "Enviar";
-            button1.UseVisualStyleBackColor = true;
+            btnEnviar.Cursor = Cursors.Hand;
+            btnEnviar.Location = new Point(617, 344);
+            btnEnviar.Margin = new Padding(3, 2, 3, 2);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(74, 20);
+            btnEnviar.TabIndex = 38;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = true;
+            btnEnviar.Click += btnEnviar_Click;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(615, 117);
+            label6.Location = new Point(538, 88);
             label6.Name = "label6";
-            label6.Size = new Size(0, 20);
+            label6.Size = new Size(0, 15);
             label6.TabIndex = 39;
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(608, 319);
+            pictureBox6.Location = new Point(532, 239);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(286, 179);
+            pictureBox6.Size = new Size(250, 134);
             pictureBox6.TabIndex = 40;
             pictureBox6.TabStop = false;
             // 
@@ -192,9 +201,10 @@
             btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
             btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
-            btnRecomendaciones.Location = new Point(597, 509);
+            btnRecomendaciones.Location = new Point(522, 382);
+            btnRecomendaciones.Margin = new Padding(3, 2, 3, 2);
             btnRecomendaciones.Name = "btnRecomendaciones";
-            btnRecomendaciones.Size = new Size(298, 59);
+            btnRecomendaciones.Size = new Size(261, 44);
             btnRecomendaciones.TabIndex = 46;
             btnRecomendaciones.Text = "VER FORO DE RECOMENDACIONES \r\nY QUEJAS";
             btnRecomendaciones.TextAlign = ContentAlignment.MiddleLeft;
@@ -211,10 +221,9 @@
             btnCasa.ForeColor = Color.Black;
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(78, 480);
-            btnCasa.Margin = new Padding(3, 4, 3, 4);
+            btnCasa.Location = new Point(68, 360);
             btnCasa.Name = "btnCasa";
-            btnCasa.Size = new Size(87, 100);
+            btnCasa.Size = new Size(76, 75);
             btnCasa.TabIndex = 103;
             btnCasa.Text = "CASA";
             btnCasa.TextAlign = ContentAlignment.BottomCenter;
@@ -231,10 +240,9 @@
             btnAtras.ForeColor = Color.Black;
             btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
             btnAtras.ImageAlign = ContentAlignment.TopCenter;
-            btnAtras.Location = new Point(222, 480);
-            btnAtras.Margin = new Padding(3, 4, 3, 4);
+            btnAtras.Location = new Point(194, 360);
             btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(87, 100);
+            btnAtras.Size = new Size(76, 75);
             btnAtras.TabIndex = 104;
             btnAtras.Text = "ATRAS";
             btnAtras.TextAlign = ContentAlignment.BottomCenter;
@@ -251,10 +259,9 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(370, 480);
-            btnSSalir.Margin = new Padding(3, 4, 3, 4);
+            btnSSalir.Location = new Point(324, 360);
             btnSSalir.Name = "btnSSalir";
-            btnSSalir.Size = new Size(87, 100);
+            btnSSalir.Size = new Size(76, 75);
             btnSSalir.TabIndex = 105;
             btnSSalir.Text = "SALIR";
             btnSSalir.TextAlign = ContentAlignment.BottomCenter;
@@ -263,15 +270,15 @@
             // 
             // frmRuta6
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(922, 613);
+            ClientSize = new Size(807, 460);
             Controls.Add(btnSSalir);
             Controls.Add(btnAtras);
             Controls.Add(btnCasa);
             Controls.Add(btnRecomendaciones);
-            Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(btnEnviar);
+            Controls.Add(txtRecomendaciones);
             Controls.Add(label5);
             Controls.Add(pictureBox6);
             Controls.Add(label6);
@@ -284,6 +291,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmRuta6";
             Text = "Ruta6";
             Load += frmRuta6_Load;
@@ -307,9 +315,9 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private TextBox textBox1;
+        private TextBox txtRecomendaciones;
         private Label label5;
-        private Button button1;
+        private Button btnEnviar;
         private Label label6;
         private PictureBox pictureBox6;
         private Button btnRecomendaciones;

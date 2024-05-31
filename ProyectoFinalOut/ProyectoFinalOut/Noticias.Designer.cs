@@ -39,19 +39,23 @@
             textBox2 = new TextBox();
             btnCasa = new Botones();
             btnSSalir = new Botones();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(350, 7);
+            label1.Location = new Point(306, 5);
             label1.Name = "label1";
-            label1.Size = new Size(270, 46);
+            label1.Size = new Size(226, 38);
             label1.TabIndex = 36;
             label1.Text = "Noticias y anuncios importantes \r\nsobre el servicio de autobuses";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -59,18 +63,20 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(264, 1);
+            pictureBox2.Location = new Point(231, 1);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(71, 61);
+            pictureBox2.Size = new Size(62, 46);
             pictureBox2.TabIndex = 37;
             pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(2, -4);
+            pictureBox3.Location = new Point(2, -3);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(64, 64);
+            pictureBox3.Size = new Size(56, 48);
             pictureBox3.TabIndex = 39;
             pictureBox3.TabStop = false;
             // 
@@ -78,19 +84,20 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(61, 17);
+            label2.Location = new Point(53, 13);
             label2.Name = "label2";
-            label2.Size = new Size(114, 24);
+            label2.Size = new Size(94, 19);
             label2.TabIndex = 38;
             label2.Text = "Transporti";
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(447, 339);
+            textBox1.Location = new Point(10, 188);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
             textBox1.ReadOnly = true;
-            textBox1.Size = new Size(441, 135);
+            textBox1.Size = new Size(297, 143);
             textBox1.TabIndex = 40;
             textBox1.Text = resources.GetString("textBox1.Text");
             textBox1.TextChanged += textBox1_TextChanged;
@@ -98,28 +105,31 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(459, 60);
+            pictureBox4.Location = new Point(313, 247);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(440, 247);
+            pictureBox4.Size = new Size(202, 185);
             pictureBox4.TabIndex = 41;
             pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(79, 268);
+            pictureBox1.Location = new Point(313, 41);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(341, 253);
+            pictureBox1.Size = new Size(193, 202);
             pictureBox1.TabIndex = 43;
             pictureBox1.TabStop = false;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(46, 80);
+            textBox2.Location = new Point(10, 60);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Multiline = true;
             textBox2.Name = "textBox2";
             textBox2.ReadOnly = true;
-            textBox2.Size = new Size(396, 159);
+            textBox2.Size = new Size(297, 120);
             textBox2.TabIndex = 42;
             textBox2.Text = resources.GetString("textBox2.Text");
             // 
@@ -133,10 +143,9 @@
             btnCasa.ForeColor = Color.Black;
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(535, 481);
-            btnCasa.Margin = new Padding(3, 4, 3, 4);
+            btnCasa.Location = new Point(10, 336);
             btnCasa.Name = "btnCasa";
-            btnCasa.Size = new Size(95, 103);
+            btnCasa.Size = new Size(83, 77);
             btnCasa.TabIndex = 44;
             btnCasa.Text = "CASA";
             btnCasa.TextAlign = ContentAlignment.BottomCenter;
@@ -153,21 +162,42 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(683, 481);
-            btnSSalir.Margin = new Padding(3, 4, 3, 4);
+            btnSSalir.Location = new Point(150, 336);
             btnSSalir.Name = "btnSSalir";
-            btnSSalir.Size = new Size(95, 103);
+            btnSSalir.Size = new Size(83, 77);
             btnSSalir.TabIndex = 45;
             btnSSalir.Text = "SALIR";
             btnSSalir.TextAlign = ContentAlignment.BottomCenter;
             btnSSalir.UseVisualStyleBackColor = false;
             btnSSalir.Click += btnSSalir_Click;
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(512, 45);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(193, 202);
+            pictureBox5.TabIndex = 46;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(512, 247);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(193, 202);
+            pictureBox6.TabIndex = 47;
+            pictureBox6.TabStop = false;
+            // 
             // frmNoticias
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(922, 613);
+            ClientSize = new Size(807, 460);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox5);
             Controls.Add(btnSSalir);
             Controls.Add(btnCasa);
             Controls.Add(pictureBox1);
@@ -178,6 +208,7 @@
             Controls.Add(label2);
             Controls.Add(pictureBox2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "frmNoticias";
             Text = "Noticias";
             Load += frmNoticias_Load;
@@ -185,6 +216,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -200,5 +233,7 @@
         private TextBox textBox2;
         private Botones btnCasa;
         private Botones btnSSalir;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
     }
 }

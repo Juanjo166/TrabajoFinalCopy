@@ -48,7 +48,7 @@ namespace ProyectoFinalOut
 
         private void frmVentana3Respuesta_Load(object sender, EventArgs e)
         {
-            lblBienvenida.Text = $"¡Bienvenido {Usuario.Nombre} Estamos para \n ayudarlo en su recorrido!";
+            lblBienvenida.Text = $"¡Bienvenido {Usuario.Nombre} estamos para \n ayudarlo en su recorrido!";
         }
     }
 }

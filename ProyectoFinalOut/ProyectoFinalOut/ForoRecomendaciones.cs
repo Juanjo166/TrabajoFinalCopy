@@ -12,9 +12,10 @@ namespace ProyectoFinalOut
 {
     public partial class frmForoRecomendaciones : Form
     {
-        public frmForoRecomendaciones()
+        public frmForoRecomendaciones( string mensaje)
         {
             InitializeComponent();
+            txtMensaje.Text = mensaje;
             
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;

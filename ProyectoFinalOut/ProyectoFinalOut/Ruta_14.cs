@@ -66,9 +66,9 @@ namespace ProyectoFinalOut
 
         private void btnRecomendaciones_Click(object sender, EventArgs e)
         {
-            frmForoRecomendaciones fr = new frmForoRecomendaciones();
-            this.Hide();
-            fr.ShowDialog(); //Muestro formulario
+            //frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            //this.Hide();
+            //fr.ShowDialog(); //Muestro formulario
         }
 
         private void btnCasa_Click_1(object sender, EventArgs e)
@@ -88,6 +88,18 @@ namespace ProyectoFinalOut
         private void btnSSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Confirrmar Envio", "QUEJAS Y RECOMENDACIONES", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (r == DialogResult.Yes)
+            {
+                string mensaje = txtRecomendaciones.Text;
+                frmForoRecomendaciones fr = new frmForoRecomendaciones(mensaje);
+                this.Hide();
+                fr.ShowDialog();
+            }
         }
     }
 }
