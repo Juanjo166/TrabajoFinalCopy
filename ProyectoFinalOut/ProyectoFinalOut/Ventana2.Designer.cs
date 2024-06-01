@@ -122,6 +122,7 @@
             comboBoxUbicacion.Name = "comboBoxUbicacion";
             comboBoxUbicacion.Size = new Size(271, 28);
             comboBoxUbicacion.TabIndex = 30;
+            comboBoxUbicacion.SelectedIndexChanged += comboBoxUbicacion_SelectedIndexChanged;
             // 
             // comboBoxDestino
             // 
@@ -259,6 +260,7 @@
             listBoxRutas.Name = "listBoxRutas";
             listBoxRutas.Size = new Size(150, 84);
             listBoxRutas.TabIndex = 48;
+            listBoxRutas.SelectedIndexChanged += listBoxRutas_SelectedIndexChanged;
             // 
             // pictureBox4
             // 
@@ -267,6 +269,7 @@
             pictureBox4.Size = new Size(404, 403);
             pictureBox4.TabIndex = 49;
             pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
             // 
             // Ventana2
             // 

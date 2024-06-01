@@ -66,9 +66,9 @@ namespace ProyectoFinalOut
 
         private void btnRecomendaciones_Click(object sender, EventArgs e)
         {
-            //frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            //frmForoRecomendaciones fr1 = new frmForoRecomendaciones();
             //this.Hide();
-            //fr.ShowDialog(); //Muestro formulario
+            //fr1.ShowDialog(); //Muestro formulario
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)

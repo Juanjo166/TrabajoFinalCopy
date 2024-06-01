@@ -14,6 +14,7 @@ namespace ProyectoFinalOut
     {
         // Lista de rutas predefinidas
         private Dictionary<string, List<string>> rutas;
+        private Dictionary<string, Form> rutasDictionary;
         public Ventana2()
         {
             InitializeComponent();
@@ -43,10 +44,13 @@ namespace ProyectoFinalOut
             btnNoticias.MouseLeave += new EventHandler(Button_MouseLeave);
 
             // Llenar el ComboBox con las horas del día
-            for (int i = 0; i < 24; i++)
+            for (int i = 6; i < 21; i++)
             {
                 comboBoxHora.Items.Add(i.ToString("D2") + ":00");
             }
+
+            //rutas a ventanas
+            InicializarRutasDictionary();
 
         }
 
@@ -81,9 +85,9 @@ namespace ProyectoFinalOut
             // Inicializar rutas
             rutas = new Dictionary<string, List<string>>()
             {
-                { "Carmen alto-Puente nuevo", new List<string>{ "Ruta 1", "Ruta 2" } },
-                { "Alameda-Jr. Lima", new List<string>{ "Ruta 3" } },
-                { "Puente nuevo-Alameda", new List<string>{ "Ruta 4", "Ruta 5" } },
+                { "Carmen alto-Puente nuevo", new List<string>{ "Ruta 1", "Ruta 6" } },
+                { "Alameda-Jr. Lima", new List<string>{ "Ruta 8" } },
+                { "Puente nuevo-Alameda", new List<string>{ "Ruta 14", "Ruta 21" } },
                 // Agregar más rutas según sea necesario
             };
         }
@@ -184,6 +188,44 @@ namespace ProyectoFinalOut
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void comboBoxUbicacion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        //Metodo texto a ventana
+
+        private void InicializarRutasDictionary()
+        {
+            rutasDictionary = new Dictionary<string, Form>
+        {
+            { "Ruta 1", new frmRuta1() },
+            { "Ruta 6", new frmRuta6() },
+            { "Ruta 8", new frmRuta8() },
+            { "Ruta 14", new frmRurta14() },
+            { "Ruta 7", new frmRuta7() },
+            { "Ruta 10", new frmRuta10() },
+            { "Ruta 21", new frmRuta21() }
+        };
+        }
+
+
+        private void listBoxRutas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string selectedRuta = listBoxRutas.SelectedItem.ToString();
+            if (rutasDictionary.ContainsKey(selectedRuta))
+            {
+                this.Hide();
+                rutasDictionary[selectedRuta].ShowDialog();
+            }
         }
     }
 }

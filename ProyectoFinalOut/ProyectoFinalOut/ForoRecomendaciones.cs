@@ -12,11 +12,11 @@ namespace ProyectoFinalOut
 {
     public partial class frmForoRecomendaciones : Form
     {
-        public frmForoRecomendaciones( string mensaje)
+        public frmForoRecomendaciones(string mensaje)
         {
             InitializeComponent();
             txtMensaje.Text = mensaje;
-            
+
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
 
@@ -24,7 +24,7 @@ namespace ProyectoFinalOut
             FormBorderStyle = FormBorderStyle.FixedSingle;
 
             // Asignar eventos para cada botón
-            
+
 
             btnSalir.MouseEnter += new EventHandler(Button_MouseEnter);
             btnSalir.MouseLeave += new EventHandler(Button_MouseLeave);
@@ -32,7 +32,7 @@ namespace ProyectoFinalOut
             btnCasa.MouseEnter += new EventHandler(Button_MouseEnter);
             btnCasa.MouseLeave += new EventHandler(Button_MouseLeave);
 
-            
+
 
 
         }
@@ -75,6 +75,11 @@ namespace ProyectoFinalOut
         private void btnSalir_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtMensaje_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
