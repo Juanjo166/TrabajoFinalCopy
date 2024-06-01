@@ -227,5 +227,12 @@ namespace ProyectoFinalOut
                 rutasDictionary[selectedRuta].ShowDialog();
             }
         }
+
+        private void btnRecomendaciones_Click(object sender, EventArgs e)
+        {
+            frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            this.Hide();
+            fr.ShowDialog(); //Muestro formulario
+        }
     }
 }
