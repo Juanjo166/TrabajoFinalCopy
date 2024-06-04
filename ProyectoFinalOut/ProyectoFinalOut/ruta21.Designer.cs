@@ -165,7 +165,7 @@
             pictureBox3.ErrorImage = null;
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.InitialImage = null;
-            pictureBox3.Location = new Point(635, -4);
+            pictureBox3.Location = new Point(645, 7);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(347, 479);

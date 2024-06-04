@@ -230,9 +230,9 @@ namespace ProyectoFinalOut
 
         private void btnRecomendaciones_Click(object sender, EventArgs e)
         {
-            frmForoRecomendaciones fr = new frmForoRecomendaciones();
-            this.Hide();
-            fr.ShowDialog(); //Muestro formulario
+            //frmForoRecomendaciones fr = new frmForoRecomendaciones();
+            //this.Hide();
+            //fr.ShowDialog(); //Muestro formulario
         }
     }
 }
