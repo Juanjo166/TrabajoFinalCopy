@@ -39,7 +39,6 @@
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             pictureBox5 = new PictureBox();
             lblRuta7 = new Label();
             lblHorario = new Label();
@@ -48,20 +47,21 @@
             btnCasa = new Botones();
             btnAtras = new Botones();
             btnSSalir = new Botones();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnEnviar
             // 
             btnEnviar.BackColor = Color.DodgerBlue;
             btnEnviar.Cursor = Cursors.Hand;
-            btnEnviar.Location = new Point(631, 304);
+            btnEnviar.Location = new Point(588, 297);
             btnEnviar.Margin = new Padding(3, 2, 3, 2);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(82, 30);
@@ -72,7 +72,7 @@
             // 
             // txtRecomendaciones
             // 
-            txtRecomendaciones.Location = new Point(557, 236);
+            txtRecomendaciones.Location = new Point(526, 230);
             txtRecomendaciones.Margin = new Padding(3, 2, 3, 2);
             txtRecomendaciones.Multiline = true;
             txtRecomendaciones.Name = "txtRecomendaciones";
@@ -84,7 +84,7 @@
             label5.AutoSize = true;
             label5.BackColor = Color.DodgerBlue;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(571, 215);
+            label5.Location = new Point(545, 209);
             label5.Name = "label5";
             label5.Size = new Size(189, 19);
             label5.TabIndex = 69;
@@ -93,7 +93,7 @@
             // pictureBox6
             // 
             pictureBox6.BackColor = Color.Silver;
-            pictureBox6.Location = new Point(545, 215);
+            pictureBox6.Location = new Point(515, 209);
             pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(250, 134);
@@ -105,7 +105,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Silver;
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(208, 255);
+            label3.Location = new Point(706, 20);
             label3.Name = "label3";
             label3.Size = new Size(54, 17);
             label3.TabIndex = 66;
@@ -116,7 +116,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Silver;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(11, 255);
+            label2.Location = new Point(493, 20);
             label2.Name = "label2";
             label2.Size = new Size(130, 17);
             label2.TabIndex = 65;
@@ -127,7 +127,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Silver;
             label1.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(97, 40);
+            label1.Location = new Point(138, -1);
             label1.Name = "label1";
             label1.Size = new Size(330, 17);
             label1.TabIndex = 64;
@@ -136,7 +136,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(148, 274);
+            pictureBox4.Location = new Point(631, 43);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(156, 81);
@@ -146,7 +146,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(26, 278);
+            pictureBox3.Location = new Point(510, 40);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(89, 84);
@@ -155,25 +155,15 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.ErrorImage = (Image)resources.GetObject("pictureBox2.ErrorImage");
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(26, 72);
+            pictureBox2.Location = new Point(87, 21);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(448, 168);
+            pictureBox2.Size = new Size(381, 175);
             pictureBox2.TabIndex = 61;
             pictureBox2.TabStop = false;
             pictureBox2.Click += pictureBox2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(528, -1);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(383, 460);
-            pictureBox1.TabIndex = 60;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // pictureBox5
             // 
@@ -192,7 +182,7 @@
             lblRuta7.Cursor = Cursors.Hand;
             lblRuta7.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblRuta7.ForeColor = Color.Blue;
-            lblRuta7.Location = new Point(69, 20);
+            lblRuta7.Location = new Point(69, -1);
             lblRuta7.Name = "lblRuta7";
             lblRuta7.Size = new Size(60, 17);
             lblRuta7.TabIndex = 73;
@@ -204,7 +194,7 @@
             lblHorario.AutoSize = true;
             lblHorario.BackColor = Color.Silver;
             lblHorario.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblHorario.Location = new Point(360, 255);
+            lblHorario.Location = new Point(545, 126);
             lblHorario.Name = "lblHorario";
             lblHorario.Size = new Size(136, 17);
             lblHorario.TabIndex = 75;
@@ -213,7 +203,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(321, 274);
+            pictureBox7.Location = new Point(524, 151);
             pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(202, 45);
@@ -227,7 +217,7 @@
             btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
             btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
-            btnRecomendaciones.Location = new Point(545, 367);
+            btnRecomendaciones.Location = new Point(510, 361);
             btnRecomendaciones.Margin = new Padding(3, 2, 3, 2);
             btnRecomendaciones.Name = "btnRecomendaciones";
             btnRecomendaciones.Size = new Size(261, 44);
@@ -247,7 +237,7 @@
             btnCasa.ForeColor = Color.Black;
             btnCasa.Image = (Image)resources.GetObject("btnCasa.Image");
             btnCasa.ImageAlign = ContentAlignment.TopCenter;
-            btnCasa.Location = new Point(74, 374);
+            btnCasa.Location = new Point(12, 374);
             btnCasa.Name = "btnCasa";
             btnCasa.Size = new Size(79, 76);
             btnCasa.TabIndex = 82;
@@ -266,7 +256,7 @@
             btnAtras.ForeColor = Color.Black;
             btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
             btnAtras.ImageAlign = ContentAlignment.TopCenter;
-            btnAtras.Location = new Point(197, 374);
+            btnAtras.Location = new Point(138, 374);
             btnAtras.Name = "btnAtras";
             btnAtras.Size = new Size(79, 76);
             btnAtras.TabIndex = 84;
@@ -285,7 +275,7 @@
             btnSSalir.ForeColor = Color.Black;
             btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
             btnSSalir.ImageAlign = ContentAlignment.TopCenter;
-            btnSSalir.Location = new Point(321, 374);
+            btnSSalir.Location = new Point(290, 374);
             btnSSalir.Name = "btnSSalir";
             btnSSalir.Size = new Size(79, 76);
             btnSSalir.TabIndex = 85;
@@ -294,11 +284,23 @@
             btnSSalir.UseVisualStyleBackColor = false;
             btnSSalir.Click += btnSSalir_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(87, 200);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(398, 175);
+            pictureBox1.TabIndex = 86;
+            pictureBox1.TabStop = false;
+            // 
             // frmRuta7
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(807, 460);
+            Controls.Add(pictureBox1);
             Controls.Add(btnSSalir);
             Controls.Add(btnAtras);
             Controls.Add(btnCasa);
@@ -317,7 +319,6 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Name = "frmRuta7";
             Text = "Ruta7";
             Load += frmRuta7_Load;
@@ -325,9 +326,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -343,7 +344,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox5;
         private Label lblRuta7;
         private Label lblHorario;
@@ -352,5 +352,6 @@
         private Botones btnCasa;
         private Botones btnAtras;
         private Botones btnSSalir;
+        private PictureBox pictureBox1;
     }
 }
