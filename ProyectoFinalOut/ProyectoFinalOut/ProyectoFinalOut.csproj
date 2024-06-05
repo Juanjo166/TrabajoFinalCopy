@@ -23,4 +23,12 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\juan1\OneDrive\Documentos\UNSCH\Vacional\Prueba\ProyectoFinalGITHUB\TrabajoFinalCopy\ProyectoFinalOut\ProyectoFinalOut\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\juan1\OneDrive\Documentos\UNSCH\Vacional\Prueba\ProyectoFinalGITHUB\TrabajoFinalCopy\ProyectoFinalOut\ProyectoFinalOut\.editorconfig" />
+  </ItemGroup>
+
 </Project>

@@ -37,7 +37,6 @@
             pictureBox4 = new PictureBox();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
-            pictureBox1 = new PictureBox();
             txtRecomendaciones = new TextBox();
             label5 = new Label();
             btnEnviar = new Button();
@@ -51,7 +50,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
@@ -79,7 +77,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(370, 285);
+            label3.Location = new Point(463, 331);
             label3.Name = "label3";
             label3.Size = new Size(68, 21);
             label3.TabIndex = 32;
@@ -89,7 +87,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(90, 285);
+            label2.Location = new Point(97, 331);
             label2.Name = "label2";
             label2.Size = new Size(161, 21);
             label2.TabIndex = 31;
@@ -99,7 +97,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(99, 61);
+            label1.Location = new Point(222, 9);
             label1.Name = "label1";
             label1.Size = new Size(409, 21);
             label1.TabIndex = 30;
@@ -108,7 +106,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(320, 317);
+            pictureBox4.Location = new Point(413, 355);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(181, 113);
             pictureBox4.TabIndex = 29;
@@ -117,7 +115,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(99, 317);
+            pictureBox3.Location = new Point(110, 359);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(125, 116);
             pictureBox3.TabIndex = 28;
@@ -126,24 +124,16 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(99, 85);
+            pictureBox2.Location = new Point(52, 43);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(418, 171);
+            pictureBox2.Size = new Size(869, 285);
+            pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 27;
             pictureBox2.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(541, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(381, 613);
-            pictureBox1.TabIndex = 26;
-            pictureBox1.TabStop = false;
-            // 
             // txtRecomendaciones
             // 
-            txtRecomendaciones.Location = new Point(625, 371);
+            txtRecomendaciones.Location = new Point(629, 411);
             txtRecomendaciones.Multiline = true;
             txtRecomendaciones.Name = "txtRecomendaciones";
             txtRecomendaciones.Size = new Size(251, 83);
@@ -162,7 +152,7 @@
             // btnEnviar
             // 
             btnEnviar.Cursor = Cursors.Hand;
-            btnEnviar.Location = new Point(705, 459);
+            btnEnviar.Location = new Point(709, 499);
             btnEnviar.Name = "btnEnviar";
             btnEnviar.Size = new Size(85, 27);
             btnEnviar.TabIndex = 38;
@@ -180,7 +170,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(608, 319);
+            pictureBox6.Location = new Point(612, 359);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(286, 179);
             pictureBox6.TabIndex = 40;
@@ -193,7 +183,7 @@
             btnRecomendaciones.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnRecomendaciones.Image = (Image)resources.GetObject("btnRecomendaciones.Image");
             btnRecomendaciones.ImageAlign = ContentAlignment.MiddleRight;
-            btnRecomendaciones.Location = new Point(597, 509);
+            btnRecomendaciones.Location = new Point(601, 549);
             btnRecomendaciones.Name = "btnRecomendaciones";
             btnRecomendaciones.Size = new Size(298, 59);
             btnRecomendaciones.TabIndex = 46;
@@ -284,7 +274,6 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
             Name = "frmRuta6";
             Text = "Ruta6";
             Load += frmRuta6_Load;
@@ -292,7 +281,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -307,7 +295,6 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox1;
         private TextBox txtRecomendaciones;
         private Label label5;
         private Button btnEnviar;

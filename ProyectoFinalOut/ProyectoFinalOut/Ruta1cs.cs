@@ -106,5 +106,22 @@ namespace ProyectoFinalOut
                 fr.ShowDialog();
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void botones1_Click(object sender, EventArgs e)
+        {
+            MapaRuta1 tp4 = new MapaRuta1();
+            this.Hide();
+            tp4.ShowDialog(); //Muestro formulario
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
