@@ -327,7 +327,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "frmRuta1";
-            Text = "Ruta1";
+            Text = "Ruta 5";
             Load += frmRuta1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

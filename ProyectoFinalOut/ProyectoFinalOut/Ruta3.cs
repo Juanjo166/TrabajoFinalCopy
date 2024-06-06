@@ -93,5 +93,12 @@ namespace ProyectoFinalOut
                 fr.ShowDialog();
             }
         }
+
+        private void btnVerMapa_Click(object sender, EventArgs e)
+        {
+            MapaRuta3 tp4 = new MapaRuta3();
+            this.Hide();
+            tp4.ShowDialog();
+        }
     }
 }

@@ -77,7 +77,6 @@
             txtRecomendaciones.Name = "txtRecomendaciones";
             txtRecomendaciones.Size = new Size(251, 83);
             txtRecomendaciones.TabIndex = 68;
-            
             // 
             // label5
             // 
@@ -309,6 +308,7 @@
             btnVerMapa.Text = "VER MAPA";
             btnVerMapa.TextAlign = ContentAlignment.MiddleLeft;
             btnVerMapa.UseVisualStyleBackColor = false;
+            btnVerMapa.Click += btnVerMapa_Click;
             // 
             // frmRuta7
             // 

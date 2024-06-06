@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinalOut
 {
-    partial class MapaRuta1
+    partial class MapaRuta17
     {
         /// <summary>
         /// Required designer variable.
@@ -28,39 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapaRuta1));
-            pictureBox1 = new PictureBox();
-            btnSSalir = new Botones();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MapaRuta17));
+            MapaRuta6 = new Botones();
             btnAtras = new Botones();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // MapaRuta6
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(50, -17);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(762, 1079);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-            // btnSSalir
-            // 
-            btnSSalir.BackColor = Color.SteelBlue;
-            btnSSalir.Cursor = Cursors.Hand;
-            btnSSalir.FlatAppearance.BorderSize = 0;
-            btnSSalir.FlatStyle = FlatStyle.Flat;
-            btnSSalir.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSSalir.ForeColor = Color.Black;
-            btnSSalir.Image = (Image)resources.GetObject("btnSSalir.Image");
-            btnSSalir.Location = new Point(803, 1);
-            btnSSalir.Margin = new Padding(3, 4, 3, 4);
-            btnSSalir.Name = "btnSSalir";
-            btnSSalir.Size = new Size(79, 80);
-            btnSSalir.TabIndex = 87;
-            btnSSalir.TextAlign = ContentAlignment.BottomCenter;
-            btnSSalir.UseVisualStyleBackColor = false;
-            btnSSalir.Click += btnSSalir_Click;
+            MapaRuta6.BackColor = Color.SteelBlue;
+            MapaRuta6.Cursor = Cursors.Hand;
+            MapaRuta6.FlatAppearance.BorderSize = 0;
+            MapaRuta6.FlatStyle = FlatStyle.Flat;
+            MapaRuta6.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            MapaRuta6.ForeColor = Color.Black;
+            MapaRuta6.Image = (Image)resources.GetObject("MapaRuta6.Image");
+            MapaRuta6.Location = new Point(798, 5);
+            MapaRuta6.Margin = new Padding(3, 4, 3, 4);
+            MapaRuta6.Name = "MapaRuta6";
+            MapaRuta6.Size = new Size(79, 80);
+            MapaRuta6.TabIndex = 96;
+            MapaRuta6.TextAlign = ContentAlignment.BottomCenter;
+            MapaRuta6.UseVisualStyleBackColor = false;
+            MapaRuta6.Click += MapaRuta6_Click;
             // 
             // btnAtras
             // 
@@ -71,34 +62,42 @@
             btnAtras.Font = new Font("Showcard Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAtras.ForeColor = Color.Black;
             btnAtras.Image = (Image)resources.GetObject("btnAtras.Image");
-            btnAtras.Location = new Point(803, 89);
+            btnAtras.Location = new Point(798, 93);
             btnAtras.Margin = new Padding(3, 4, 3, 4);
             btnAtras.Name = "btnAtras";
             btnAtras.Size = new Size(79, 74);
-            btnAtras.TabIndex = 86;
+            btnAtras.TabIndex = 95;
             btnAtras.TextAlign = ContentAlignment.BottomCenter;
             btnAtras.UseVisualStyleBackColor = false;
             btnAtras.Click += btnAtras_Click;
             // 
-            // MapaRuta1
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(45, -13);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(762, 1079);
+            pictureBox1.TabIndex = 94;
+            pictureBox1.TabStop = false;
+            // 
+            // MapaRuta17
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(882, 953);
-            Controls.Add(btnSSalir);
+            Controls.Add(MapaRuta6);
             Controls.Add(btnAtras);
             Controls.Add(pictureBox1);
-            Name = "MapaRuta1";
-            Text = "MapaRuta5";
-            Load += MapaRuta1_Load;
+            Name = "MapaRuta17";
+            Text = "MapaRuta17";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private Botones btnSSalir;
+        private Botones MapaRuta6;
         private Botones btnAtras;
+        private PictureBox pictureBox1;
     }
 }

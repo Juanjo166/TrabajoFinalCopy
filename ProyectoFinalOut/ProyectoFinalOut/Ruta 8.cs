@@ -35,6 +35,9 @@ namespace ProyectoFinalOut
             btnRecomendaciones.MouseEnter += new EventHandler(Button_MouseEnter);
             btnRecomendaciones.MouseLeave += new EventHandler(Button_MouseLeave);
 
+            btnVerMapa.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnVerMapa.MouseLeave += new EventHandler(Button_MouseLeave);
+
 
         }
 
@@ -99,7 +102,7 @@ namespace ProyectoFinalOut
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-           DialogResult r = MessageBox.Show("Confirrmar Envio", "QUEJAS Y RECOMENDACIONES", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult r = MessageBox.Show("Confirrmar Envio", "QUEJAS Y RECOMENDACIONES", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (r == DialogResult.Yes)
             {
                 string mensaje = txtRecomendaciones.Text;
@@ -108,6 +111,13 @@ namespace ProyectoFinalOut
                 fr.ShowDialog();
             }
 
+        }
+
+        private void btnVerMapa_Click(object sender, EventArgs e)
+        {
+            MapaRuta17 tr2 = new MapaRuta17();
+            this.Hide();
+            tr2.ShowDialog(); //Muestro formulario
         }
     }
 }

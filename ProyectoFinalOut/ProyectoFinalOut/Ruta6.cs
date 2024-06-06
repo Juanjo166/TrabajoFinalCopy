@@ -34,6 +34,8 @@ namespace ProyectoFinalOut
             btnRecomendaciones.MouseEnter += new EventHandler(Button_MouseEnter);
             btnRecomendaciones.MouseLeave += new EventHandler(Button_MouseLeave);
 
+            btnVerMapa.MouseEnter += new EventHandler(Button_MouseEnter);
+            btnVerMapa.MouseLeave += new EventHandler(Button_MouseLeave);
 
         }
 
@@ -106,6 +108,13 @@ namespace ProyectoFinalOut
                 this.Hide();
                 fr.ShowDialog();
             }
+        }
+
+        private void btnVerMapa_Click(object sender, EventArgs e)
+        {
+            MapaRuta5 tp4 = new MapaRuta5();
+            this.Hide();
+            tp4.ShowDialog(); //Muestro formulario
         }
     }
 }

@@ -307,6 +307,7 @@
             btnVerMapa.Text = "VER MAPA";
             btnVerMapa.TextAlign = ContentAlignment.MiddleLeft;
             btnVerMapa.UseVisualStyleBackColor = false;
+            btnVerMapa.Click += btnVerMapa_Click;
             // 
             // frmRuta10
             // 
