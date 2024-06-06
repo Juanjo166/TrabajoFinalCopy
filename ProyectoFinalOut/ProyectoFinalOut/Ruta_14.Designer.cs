@@ -110,7 +110,7 @@
             label4.Name = "label4";
             label4.Size = new Size(84, 21);
             label4.TabIndex = 70;
-            label4.Text = "RUTA 14";
+            label4.Text = "RUTA 12";
             // 
             // label3
             // 
@@ -297,7 +297,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "frmRurta14";
-            Text = "Ruta 14";
+            Text = "Ruta 12";
             Load += frmRurta14_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

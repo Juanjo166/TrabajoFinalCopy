@@ -50,10 +50,7 @@ namespace ProyectoFinalOut
 
         private void frmTransporti_Load(object sender, EventArgs e)
         {
-            //HOLA CON TODOS vomate tu gaaaaaaa
-            //gasajhjhdddf
-            //AAAAAAAASASSDSAFSAG
-            //ultimo comentario
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -93,5 +90,4 @@ namespace ProyectoFinalOut
         }
     }
 }
-//gaaaaaaaaaaaaaaaaa
-//ella no te amma
+

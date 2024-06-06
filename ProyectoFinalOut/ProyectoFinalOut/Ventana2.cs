@@ -119,10 +119,43 @@ namespace ProyectoFinalOut
             // Inicializar rutas
             rutas = new Dictionary<string, List<string>>()
             {
-                { "Carmen alto-Puente nuevo", new List<string>{ "Ruta 1", "Ruta 6" } },
-                { "Alameda-Jr. Lima", new List<string>{ "Ruta 8" } },
-                { "Puente nuevo-Alameda", new List<string>{ "Ruta 14", "Ruta 21" } },
-                
+                { "Penal de Yanamilla-Mercado Popular Yanamilla", new List<string>{ "Ruta 5" } },
+                { "Mercado Popular Yanamilla-Hostal Oro Verde", new List<string>{ "Ruta 5" } },
+                { "Hostal Oro Verde-Calle Malecon", new List<string>{ "Ruta 5" } },
+                { "Calle Malecon-Lotizacion Cesar Mujica Cacho", new List<string>{ "Ruta 5", "Ruta 16" } },
+                { "Lotizacion Cesar Mujica Cacho-Jr. Ica", new List<string>{ "Ruta 5" } },
+                { "Jr. Ica-Av. Daniel Alcides Carrion", new List<string>{ "Ruta 5" } },
+                { "Av. Daniel Alcides Carrion-Av. 9 de Diciembre", new List<string>{ "Ruta 5", "Ruta 3" } },
+                { "Av. 9 de Diciembre-Jr. Arica", new List<string>{ "Ruta 5", "Ruta 3", "Ruta 16" } },
+                { "Jr. Arica-Jr. Lucanas", new List<string>{ "Ruta 5", "Ruta 3" } },
+                { "Jr. Lucanas-Av. Arenales", new List<string>{ "Ruta 5", "Ruta 3" } },
+                { "Av. Arenales-Via Aprovisa (9 de Diciembre)", new List<string>{ "Ruta 5" } },
+                { "Via Aprovisa (9 de Diciembre)-Jr. Calle A", new List<string>{ "Ruta 5" } },
+                { "Jr. Calle A-Jr. José Carlos Mariátegui", new List<string>{ "Ruta 5", "Ruta 16", "Ruta 12" } },
+                { "Jr. José Carlos Mariátegui-Av. Venezuela", new List<string>{ "Ruta 5", "Ruta 6", "Ruta 16" } },
+                { "Av. Venezuela-Av. Cusco", new List<string>{ "Ruta 5", "Ruta 6", "Ruta 3", "Ruta 17" } },
+                { "Av. Cusco-Av. Ramón Castilla", new List<string>{ "Ruta 5", "Ruta 6", "Ruta 3", "Ruta 9", "Ruta 17" } },
+                { "Av. Ramón Castilla-Puente Nuevo", new List<string>{ "Ruta 5", "Ruta 6", "Ruta 3", "Ruta 9", "Ruta 7", "Ruta 17" } },
+                { "Puente Nuevo-Av. Valdelirios", new List<string>{ "Ruta 5", "Ruta 3", "Ruta 17" } },
+                { "Av. Valdelirios-Jr. Dos de Mayo", new List<string>{ "Ruta 5", "Ruta 6", "Ruta 16" } },
+                { "Jr. Dos de Mayo-Calle Itana", new List<string>{ "Ruta 5", "Ruta 6" } },
+                { "Calle Itana-Jr. 28 de Julio", new List<string>{ "Ruta 5", "Ruta 6", "Ruta 16" } },
+                { "Jr. 28 de Julio-Jr. Chorro", new List<string>{ "Ruta 5" } },
+                { "Jr. Chorro-Jr. Grau", new List<string>{ "Ruta 5" } },
+                { "Jr. Grau-Jr. Garcilazo de la Vega", new List<string>{ "Ruta 5", "Ruta 6" } },
+                { "Jr. Garcilazo de la Vega-Av. Mariscal Cáceres", new List<string>{ "Ruta 5", "Ruta 6" } },
+                { "Av. Mariscal Cáceres-Jr. Asamblea", new List<string>{ "Ruta 5", "Ruta 9" } },
+                { "Jr. Asamblea-Av. Independencia", new List<string>{ "Ruta 5", "Ruta 3", "Ruta 7", "Ruta 17" } },
+                { "Av. Independencia-Av. Universitaria", new List<string>{ "Ruta 5" } },
+                { "Av. Universitaria-Av. Señor de Los Milagros", new List<string>{ "Ruta 5" } },
+                { "Av. Señor de Los Milagros-Vía Evitamiento", new List<string>{ "Ruta 5", "Ruta 16" } },
+                { "Vía Evitamiento-Prolongación Av. Los Incas", new List<string>{ "Ruta 5" } },
+                { "Prolongación Av. Los Incas-AA.HH. Inti Raymi", new List<string>{ "Ruta 5" } },
+                { "AA.HH. Inti Raymi-Via de Evitamiento entre las Mz. C y B, A y B", new List<string>{ "Ruta 5" } },
+                { "Via de Evitamiento entre las Mz. C y B, A y B-Carretera Huanta Ayacucho", new List<string>{ "Ruta 5" } },
+                { "Carretera Huanta Ayacucho-Terminal Totora", new List<string>{ "Ruta 5" } },
+                { "Terminal Totora-Servicentro Plaza S.A.C.", new List<string>{ "Ruta 5" } }
+
             };
         }
 
@@ -241,13 +274,14 @@ namespace ProyectoFinalOut
         {
             rutasDictionary = new Dictionary<string, Form>
         {
-            { "Ruta 1", new frmRuta1() },
+            { "Ruta 5", new frmRuta1() },
             { "Ruta 6", new frmRuta6() },
-            { "Ruta 8", new frmRuta8() },
-            { "Ruta 14", new frmRurta14() },
+            { "Ruta 17", new frmRuta8() },
+            { "Ruta 12", new frmRurta14() },
             { "Ruta 7", new frmRuta7() },
-            { "Ruta 10", new frmRuta10() },
-            { "Ruta 21", new frmRuta21() }
+            { "Ruta 9", new frmRuta10() },
+            { "Ruta 3", new frmRuta3() },
+            { "Ruta 16", new frmRuta21() }
         };
         }
 
