@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace ProyectoFinalOut
 {
-    public partial class frmRuta1 : Form
+    public partial class frmRuta3 : Form
     {
-        public frmRuta1()
+        public frmRuta3()
         {
             InitializeComponent();
             Size = new Size(940, 660);
             StartPosition = FormStartPosition.CenterScreen;
             MaximizeBox = false; // Deshabilitar el botón de maximizar
-            FormBorderStyle = FormBorderStyle.FixedSingle; // Establecer el borde del formulario a un tamaño fijo
+            FormBorderStyle = FormBorderStyle.FixedSingle;
 
             // Asignar eventos para cada botón
             btnAtras.MouseEnter += new EventHandler(Button_MouseEnter);
@@ -36,8 +36,8 @@ namespace ProyectoFinalOut
             btnVerMapa.MouseEnter += new EventHandler(Button_MouseEnter);
             btnVerMapa.MouseLeave += new EventHandler(Button_MouseLeave);
 
-        }
 
+        }
 
         //Metodos para los botones dinamicos
         private void Button_MouseEnter(object sender, EventArgs e)
@@ -62,40 +62,24 @@ namespace ProyectoFinalOut
 
 
 
-        private void frmRuta1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void btnRecomendaciones_Click(object sender, EventArgs e)
-        {
-            //frmForoRecomendaciones fr1 = new frmForoRecomendaciones();
-            //this.Hide();
-            //fr1.ShowDialog(); //Muestro formulario
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCasa_Click_1(object sender, EventArgs e)
-        {
-            Ventana2 vt2 = new Ventana2();
-            this.Hide();
-            vt2.ShowDialog(); //Muestro formulario
-        }
-
-        private void btnAtras_Click(object sender, EventArgs e)
+        private void btnCasa_Click(object sender, EventArgs e)
         {
             frmTutransporti tp4 = new frmTutransporti();
             this.Hide();
-            tp4.ShowDialog(); //Muestro formulario
+            tp4.ShowDialog();
         }
 
         private void btnSSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            Transportes2 tp4 = new Transportes2();
+            this.Hide();
+            tp4.ShowDialog();
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -108,28 +92,6 @@ namespace ProyectoFinalOut
                 this.Hide();
                 fr.ShowDialog();
             }
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void botones1_Click(object sender, EventArgs e)
-        {
-            MapaRuta1 tp4 = new MapaRuta1();
-            this.Hide();
-            tp4.ShowDialog(); //Muestro formulario
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtRecomendaciones_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

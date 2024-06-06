@@ -113,5 +113,12 @@ namespace ProyectoFinalOut
         {
             Application.Exit();
         }
+
+        private void btnRuta3_Click(object sender, EventArgs e)
+        {
+            frmRuta3 tp3 = new frmRuta3();
+            this.Hide();
+            tp3.ShowDialog(); //Muestro formulario
+        }
     }
 }

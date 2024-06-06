@@ -89,7 +89,7 @@
             btnRuta8.Name = "btnRuta8";
             btnRuta8.Size = new Size(109, 94);
             btnRuta8.TabIndex = 29;
-            btnRuta8.Text = "RUTA 8";
+            btnRuta8.Text = "RUTA 17";
             btnRuta8.TextAlign = ContentAlignment.BottomCenter;
             btnRuta8.UseVisualStyleBackColor = false;
             btnRuta8.Click += btnRuta8_Click_1;
@@ -109,7 +109,7 @@
             btnRuta14.Name = "btnRuta14";
             btnRuta14.Size = new Size(109, 94);
             btnRuta14.TabIndex = 30;
-            btnRuta14.Text = "RUTA 14";
+            btnRuta14.Text = "RUTA 12";
             btnRuta14.TextAlign = ContentAlignment.BottomCenter;
             btnRuta14.UseVisualStyleBackColor = false;
             btnRuta14.Click += btnRuta14_Click;
@@ -129,7 +129,7 @@
             btnRuta21.Name = "btnRuta21";
             btnRuta21.Size = new Size(109, 97);
             btnRuta21.TabIndex = 31;
-            btnRuta21.Text = "RUTA 21";
+            btnRuta21.Text = "RUTA 16";
             btnRuta21.TextAlign = ContentAlignment.BottomCenter;
             btnRuta21.UseVisualStyleBackColor = false;
             btnRuta21.Click += btnRuta21_Click;
@@ -152,6 +152,7 @@
             btnRuta3.Text = "RUTA 3";
             btnRuta3.TextAlign = ContentAlignment.BottomCenter;
             btnRuta3.UseVisualStyleBackColor = false;
+            btnRuta3.Click += btnRuta3_Click;
             // 
             // btnCasa
             // 

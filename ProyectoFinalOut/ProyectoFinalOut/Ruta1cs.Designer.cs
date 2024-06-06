@@ -46,21 +46,24 @@
             btnAtras = new Botones();
             btnSSalir = new Botones();
             pictureBox1 = new PictureBox();
-            botones1 = new Botones();
+            btnVerMapa = new Botones();
+            pictureBox7 = new PictureBox();
+            lblHorario = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(51, 69);
+            pictureBox2.Location = new Point(8, 69);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(535, 207);
+            pictureBox2.Size = new Size(597, 207);
             pictureBox2.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox2.TabIndex = 15;
             pictureBox2.TabStop = false;
@@ -68,16 +71,16 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(677, 188);
+            pictureBox3.Location = new Point(687, 157);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(233, 116);
+            pictureBox3.Size = new Size(226, 116);
             pictureBox3.TabIndex = 16;
             pictureBox3.TabStop = false;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(720, 38);
+            pictureBox4.Location = new Point(732, 17);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(181, 113);
             pictureBox4.TabIndex = 17;
@@ -98,7 +101,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(704, 156);
+            label2.Location = new Point(733, 133);
             label2.Name = "label2";
             label2.Size = new Size(161, 21);
             label2.TabIndex = 19;
@@ -108,7 +111,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(770, 6);
+            label3.Location = new Point(797, -1);
             label3.Name = "label3";
             label3.Size = new Size(68, 21);
             label3.TabIndex = 20;
@@ -146,17 +149,18 @@
             // 
             // txtRecomendaciones
             // 
-            txtRecomendaciones.Location = new Point(631, 403);
+            txtRecomendaciones.Location = new Point(643, 403);
             txtRecomendaciones.Multiline = true;
             txtRecomendaciones.Name = "txtRecomendaciones";
             txtRecomendaciones.Size = new Size(251, 83);
             txtRecomendaciones.TabIndex = 41;
+            txtRecomendaciones.TextChanged += txtRecomendaciones_TextChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(660, 326);
+            label5.Location = new Point(660, 367);
             label5.Name = "label5";
             label5.Size = new Size(222, 23);
             label5.TabIndex = 42;
@@ -165,7 +169,8 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(615, 352);
+            pictureBox6.BackColor = SystemColors.ActiveCaption;
+            pictureBox6.Location = new Point(627, 352);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(286, 179);
             pictureBox6.TabIndex = 44;
@@ -251,34 +256,59 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(51, 287);
+            pictureBox1.Location = new Point(12, 229);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(535, 207);
+            pictureBox1.Size = new Size(566, 265);
             pictureBox1.SizeMode = PictureBoxSizeMode.CenterImage;
             pictureBox1.TabIndex = 86;
             pictureBox1.TabStop = false;
             // 
-            // botones1
+            // btnVerMapa
             // 
-            botones1.BackColor = Color.MediumSlateBlue;
-            botones1.FlatAppearance.BorderSize = 0;
-            botones1.FlatStyle = FlatStyle.Flat;
-            botones1.ForeColor = Color.White;
-            botones1.Location = new Point(592, 101);
-            botones1.Name = "botones1";
-            botones1.Size = new Size(117, 50);
-            botones1.TabIndex = 87;
-            botones1.Text = "VER MAPA";
-            botones1.UseVisualStyleBackColor = false;
-            botones1.Click += botones1_Click;
+            btnVerMapa.BackColor = Color.SteelBlue;
+            btnVerMapa.FlatAppearance.BorderSize = 0;
+            btnVerMapa.FlatStyle = FlatStyle.Flat;
+            btnVerMapa.Font = new Font("Showcard Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVerMapa.ForeColor = Color.Black;
+            btnVerMapa.Image = (Image)resources.GetObject("btnVerMapa.Image");
+            btnVerMapa.ImageAlign = ContentAlignment.MiddleRight;
+            btnVerMapa.Location = new Point(595, 13);
+            btnVerMapa.Name = "btnVerMapa";
+            btnVerMapa.Size = new Size(131, 50);
+            btnVerMapa.TabIndex = 87;
+            btnVerMapa.Text = "VER MAPA";
+            btnVerMapa.TextAlign = ContentAlignment.MiddleLeft;
+            btnVerMapa.UseVisualStyleBackColor = false;
+            btnVerMapa.Click += botones1_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(663, 301);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(231, 45);
+            pictureBox7.TabIndex = 111;
+            pictureBox7.TabStop = false;
+            // 
+            // lblHorario
+            // 
+            lblHorario.AutoSize = true;
+            lblHorario.BackColor = Color.Silver;
+            lblHorario.Font = new Font("Tahoma", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHorario.Location = new Point(691, 279);
+            lblHorario.Name = "lblHorario";
+            lblHorario.Size = new Size(167, 21);
+            lblHorario.TabIndex = 110;
+            lblHorario.Text = "Horario de trabajo";
             // 
             // frmRuta1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(922, 613);
-            Controls.Add(botones1);
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBox7);
+            Controls.Add(lblHorario);
+            Controls.Add(btnVerMapa);
             Controls.Add(btnSSalir);
             Controls.Add(btnAtras);
             Controls.Add(btnCasa);
@@ -295,6 +325,7 @@
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Name = "frmRuta1";
             Text = "Ruta1";
             Load += frmRuta1_Load;
@@ -304,6 +335,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -326,6 +358,8 @@
         private Botones btnAtras;
         private Botones btnSSalir;
         private PictureBox pictureBox1;
-        private Botones botones1;
+        private Botones btnVerMapa;
+        private PictureBox pictureBox7;
+        private Label lblHorario;
     }
 }
