@@ -88,7 +88,7 @@ namespace ProyectoFinalOut
                 { "Carmen alto-Puente nuevo", new List<string>{ "Ruta 1", "Ruta 6" } },
                 { "Alameda-Jr. Lima", new List<string>{ "Ruta 8" } },
                 { "Puente nuevo-Alameda", new List<string>{ "Ruta 14", "Ruta 21" } },
-                // Agregar más rutas según sea necesario
+                
             };
         }
 
