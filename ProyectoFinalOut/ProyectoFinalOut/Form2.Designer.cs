@@ -99,7 +99,7 @@
             btnRuta1.Name = "btnRuta1";
             btnRuta1.Size = new Size(111, 98);
             btnRuta1.TabIndex = 18;
-            btnRuta1.Text = "RUTA 1";
+            btnRuta1.Text = "RUTA 5";
             btnRuta1.TextAlign = ContentAlignment.BottomCenter;
             btnRuta1.UseVisualStyleBackColor = false;
             btnRuta1.Click += btnRuta1_Click_1;
@@ -139,7 +139,7 @@
             btnRuta10.Name = "btnRuta10";
             btnRuta10.Size = new Size(111, 98);
             btnRuta10.TabIndex = 20;
-            btnRuta10.Text = "RUTA 10";
+            btnRuta10.Text = "RUTA 9";
             btnRuta10.TextAlign = ContentAlignment.BottomCenter;
             btnRuta10.UseVisualStyleBackColor = false;
             btnRuta10.Click += btnRuta10_Click;
