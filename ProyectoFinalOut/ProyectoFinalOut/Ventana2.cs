@@ -78,9 +78,43 @@ namespace ProyectoFinalOut
         //Metodo de rutas
         private void InicializarDatos()
         {
-            // Llenar los ComboBox con ubicaciones y destinos
-            comboBoxUbicacion.Items.AddRange(new string[] { "Carmen alto", "Puente nuevo", "Alameda", "Jr. Lima" });
-            comboBoxDestino.Items.AddRange(new string[] { "Carmen alto", "Puente nuevo", "Alameda", "Jr. Lima" });
+            string[] ubicaciones = {
+                "Penal de Yanamilla", "Mercado Popular Yanamilla", "Hostal Oro Verde",
+                "Calle Malecon", "Lotizacion Cesar Mujica Cacho", "Jr. Ica",
+                "Av. Daniel Alcides Carrion", "Av. 9 de Diciembre", "Jr. Arica",
+                "Jr. Lucanas hasta la 5ta cuadra", "Av. Arenales", "Via Aprovisa (9 de Diciembre)",
+                "Jr. Calle A", "Jr. José Carlos Mariátegui", "Av. Venezuela", "Av. Cusco",
+                "Av. Ramón Castilla", "Puente Nuevo", "Av. Valdelirios", "Jr. Dos de Mayo",
+                "Calle Itana", "Jr. 28 de Julio", "Jr. Chorro", "Jr. Grau",
+                "Jr. Garcilazo de la Vega", "Av. Mariscal Cáceres", "Jr. Asamblea",
+                "Av. Independencia", "Av. Universitaria", "Av. Señor de Los Milagros",
+                "Vía Evitamiento", "Prolongación Av. Los Incas", "AA.HH. Inti Raymi",
+                "Carretera Huanta Ayacucho", "Terminal Totora", "Servicentro Plaza S.A.C.",
+                "Jr. Progreso", "Jr. Manuel Alarcón", "Jr. Ciro Alegría", "Jr. Mariano Melgar",
+                "Jr. Cesar Vallejo", "Jr. Gonzales Prado", "Jr. Libertad", "Calle Nazareno",
+                "Jr. Carlos F. Vivanco", "Pasaje 01 (frontis del Penal)", "Vía Andahuaylas Km 7.6",
+                "Av. Vraem", "Mercado Modelo (de Yanama)", "Loza Deportiva R1-S1-T1 (Manzana U-P1-Q1)",
+                "Av. Esteban Campos", "Av. Machupicchu", "Av. Javier Heraud", "Av. San Lorenzo",
+                "Puente de la Alameda Valdelirios", "Calle San Juan de Dios", "Jr. Las Magnolias",
+                "Jr. Las Palmeras", "Via Los Libertadores", "Av. Luis Fassio Masprone",
+                "Paradero Inicial", "Av. Héroes de la Pacificación Mz. \"N Lote 11", "Psj. la Mar",
+                "Av. los Robles", "Av. General Edwin Donayre", "Av.República", "Calle 13",
+                "Calle Numero 2", "Av. Tres (Puerta del Nuevo Hospital)", "Repartición Huatatas Av. Arenales",
+                "Av. los Angeles", "Av. las Mercedes", "Av. del Ejercito", "Ovalo Via Evitamiento",
+                "Jr. Bella Vista", "Jr.Salvador Cavero (Paradero Huanta)", "Jr.Abraham Valdelomar",
+                "Av. del Deporte", "Grifo Gomebol", "Parque Mollepata", "Ingreso Mollepata",
+                "Av. Apumayla", "Mollepata Sector I", "Av. Javier Perez De Cuellar",
+                "Cuartel \"Los Cabitos\"", "Pasaje Cáceres", "Jr. Manco Capac",
+                "Jr. María Montesori (Costado De La Clínica \"El Nazareno\")", "Jr. Arriba Peru",
+                "Jr. Morro de Arica", "Jr. Razuhuillca", "Jr. Pisco", "Jr.Cordova",
+                "Jose Olaya", "Jr. Agustin Gamarra", "Ovalo del Puente Nuevo", "Jr. Munive",
+                "Jr. Madrid", "Jr. Ayacucho", "Posta San Juan", "Plazoleta de Capillapata",
+                "Jr. Vista Alegre", "Jr. las Casuarinas", "Urbanización Magisterial",
+                "27 de Octubre", "Asoc de Vivienda los Warpas (Nahuinpuquio)"
+            };
+
+            comboBoxUbicacion.Items.AddRange(ubicaciones);
+            comboBoxDestino.Items.AddRange(ubicaciones);
 
             // Inicializar rutas
             rutas = new Dictionary<string, List<string>>()
